@@ -1,0 +1,1267 @@
+Start of file: backoffice.html
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>בק-אופיס - ניהול תרגומים</title>
+  <link rel="stylesheet" href="css/backoffice.css">
+</head>
+<body>
+<h1>בק-אופיס - ניהול תרגומים</h1>
+<div class="language-selector">
+  <label for="language">בחר שפה:</label>
+  <select id="language">
+    <option value="he">עברית</option>
+    <option value="en">English</option>
+    <option value="es">Español</option>
+    <option value="it">Italiano</option>
+    <option value="pt">Português</option>
+    <option value="ar">العربية</option>
+    <option value="de">Deutsch</option>
+  </select>
+</div>
+<form id="translationForm">
+  <!-- Page Title -->
+  <div class="form-group">
+    <label for="title">כותרת הדף (`title`):</label>
+    <input type="text" id="title" name="title" required>
+  </div>
+
+  <!-- Navigation -->
+  <h2>ניווט</h2>
+  <div class="form-group">
+    <label for="nav_biz_online">מה זה ביז אונליין? (`nav_biz_online`):</label>
+    <input type="text" id="nav_biz_online" name="nav_biz_online" required>
+  </div>
+  <div class="form-group">
+    <label for="nav_tutorial_videos">סרטוני הדרכה (`nav_tutorial_videos`):</label>
+    <input type="text" id="nav_tutorial_videos" name="nav_tutorial_videos" required>
+  </div>
+  <div class="form-group">
+    <label for="nav_reviews">חוות דעת (`nav_reviews`):</label>
+    <input type="text" id="nav_reviews" name="nav_reviews" required>
+  </div>
+  <div class="form-group">
+    <label for="nav_faq">שאלות ותשובות (`nav_faq`):</label>
+    <input type="text" id="nav_faq" name="nav_faq" required>
+  </div>
+  <div class="form-group">
+    <label for="nav_contact">צור קשר (`nav_contact`):</label>
+    <input type="text" id="nav_contact" name="nav_contact" required>
+  </div>
+
+  <!-- Call to Action Buttons -->
+  <h2>כפתורי קריאה לפעולה (CTA)</h2>
+  <div class="form-group">
+    <label for="cta_whatsapp">לחצו לתמיכה והדרכה בWhatsApp (`cta_whatsapp`):</label>
+    <input type="text" id="cta_whatsapp" name="cta_whatsapp" required>
+  </div>
+  <div class="form-group">
+    <label for="cta_login">התחברות (`cta_login`):</label>
+    <input type="text" id="cta_login" name="cta_login" required>
+  </div>
+  <div class="form-group">
+    <label for="cta_schedule_call">תאמו שיחת הדרכה ללא עלות! (`cta_schedule_call`):</label>
+    <input type="text" id="cta_schedule_call" name="cta_schedule_call" required>
+  </div>
+
+  <!-- Hero Section -->
+  <h2>חלק גיבור (Hero Section)</h2>
+  <div class="form-group">
+    <label for="hero_heading">כותרת (`hero_heading`):</label>
+    <input type="text" id="hero_heading" name="hero_heading" required>
+  </div>
+  <div class="form-group">
+    <label for="hero_text1">טקסט 1 (`hero_text1`):</label>
+    <textarea id="hero_text1" name="hero_text1" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="hero_text2">טקסט 2 (`hero_text2`):</label>
+    <textarea id="hero_text2" name="hero_text2" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="hero_text3">טקסט 3 (`hero_text3`):</label>
+    <textarea id="hero_text3" name="hero_text3" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="hero_text4">טקסט 4 (`hero_text4`):</label>
+    <textarea id="hero_text4" name="hero_text4" required></textarea>
+  </div>
+
+  <!-- About Section -->
+  <h2>אודות</h2>
+  <div class="form-group">
+    <label for="about_heading">כותרת (`about_heading`):</label>
+    <input type="text" id="about_heading" name="about_heading" required>
+  </div>
+
+  <!-- Benefits -->
+  <h2>יתרונות</h2>
+  <div class="form-group">
+    <label for="benefit1">יתרון 1 (`benefit1`):</label>
+    <textarea id="benefit1" name="benefit1" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="benefit2">יתרון 2 (`benefit2`):</label>
+    <textarea id="benefit2" name="benefit2" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="benefit3">יתרון 3 (`benefit3`):</label>
+    <textarea id="benefit3" name="benefit3" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="benefit4">יתרון 4 (`benefit4`):</label>
+    <textarea id="benefit4" name="benefit4" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="benefit5">יתרון 5 (`benefit5`):</label>
+    <textarea id="benefit5" name="benefit5" required></textarea>
+  </div>
+
+  <!-- Showcase Section -->
+  <h2>הצג (Showcase)</h2>
+  <div class="form-group">
+    <label for="showcase_heading">כותרת (`showcase_heading`):</label>
+    <input type="text" id="showcase_heading" name="showcase_heading" required>
+  </div>
+
+  <!-- Reviews Section -->
+  <h2>חוות דעת</h2>
+  <div class="form-group">
+    <label for="reviews_heading">כותרת (`reviews_heading`):</label>
+    <input type="text" id="reviews_heading" name="reviews_heading" required>
+  </div>
+  <div class="form-group">
+    <label for="review_text1">חוות דעת 1 (`review_text1`):</label>
+    <textarea id="review_text1" name="review_text1" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="review_text2">חוות דעת 2 (`review_text2`):</label>
+    <textarea id="review_text2" name="review_text2" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="review_text3">חוות דעת 3 (`review_text3`):</label>
+    <textarea id="review_text3" name="review_text3" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="review_text4">חוות דעת 4 (`review_text4`):</label>
+    <textarea id="review_text4" name="review_text4" required></textarea>
+  </div>
+
+  <!-- Contact Section -->
+  <h2>צור קשר</h2>
+  <div class="form-group">
+    <label for="contact_heading">כותרת (`contact_heading`):</label>
+    <input type="text" id="contact_heading" name="contact_heading" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_subheading">תת-כותרת (`contact_subheading`):</label>
+    <textarea id="contact_subheading" name="contact_subheading" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="contact_label_name">תווית שם (`contact_label_name`):</label>
+    <input type="text" id="contact_label_name" name="contact_label_name" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_placeholder_name">Placeholder שם (`contact_placeholder_name`):</label>
+    <input type="text" id="contact_placeholder_name" name="contact_placeholder_name" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_label_phone">תווית טלפון (`contact_label_phone`):</label>
+    <input type="text" id="contact_label_phone" name="contact_label_phone" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_placeholder_phone">Placeholder טלפון (`contact_placeholder_phone`):</label>
+    <input type="text" id="contact_placeholder_phone" name="contact_placeholder_phone" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_label_email">תווית אימייל (`contact_label_email`):</label>
+    <input type="text" id="contact_label_email" name="contact_label_email" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_placeholder_email">Placeholder אימייל (`contact_placeholder_email`):</label>
+    <input type="text" id="contact_placeholder_email" name="contact_placeholder_email" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_label_message">תווית הודעה (`contact_label_message`):</label>
+    <input type="text" id="contact_label_message" name="contact_label_message" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_placeholder_message">Placeholder הודעה (`contact_placeholder_message`):</label>
+    <input type="text" id="contact_placeholder_message" name="contact_placeholder_message" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_submit_button">כפתור שלח (`contact_submit_button`):</label>
+    <input type="text" id="contact_submit_button" name="contact_submit_button" required>
+  </div>
+
+  <!-- Tutorials Section -->
+  <h2>סרטוני הדרכה</h2>
+  <div class="form-group">
+    <label for="tutorials_heading">כותרת (`tutorials_heading`):</label>
+    <input type="text" id="tutorials_heading" name="tutorials_heading" required>
+  </div>
+  <div class="form-group">
+    <label for="tutorial_question1">שאלה 1 (`tutorial_question1`):</label>
+    <input type="text" id="tutorial_question1" name="tutorial_question1" required>
+  </div>
+  <div class="form-group">
+    <label for="tutorial_answer_text1">תשובה טקסט 1 (`tutorial_answer_text1`):</label>
+    <textarea id="tutorial_answer_text1" name="tutorial_answer_text1" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="tutorial_question2">שאלה 2 (`tutorial_question2`):</label>
+    <input type="text" id="tutorial_question2" name="tutorial_question2" required>
+  </div>
+  <div class="form-group">
+    <label for="tutorial_answer_text2">תשובה טקסט 2 (`tutorial_answer_text2`):</label>
+    <textarea id="tutorial_answer_text2" name="tutorial_answer_text2" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="tutorial_question3">שאלה 3 (`tutorial_question3`):</label>
+    <input type="text" id="tutorial_question3" name="tutorial_question3" required>
+  </div>
+  <div class="form-group">
+    <label for="tutorial_answer_text3">תשובה טקסט 3 (`tutorial_answer_text3`):</label>
+    <textarea id="tutorial_answer_text3" name="tutorial_answer_text3" required></textarea>
+  </div>
+
+  <!-- Footer -->
+  <h2>כותרת תחתונה (Footer)</h2>
+  <div class="form-group">
+    <label for="footer_rights">זכויות יוצרים (`footer_rights`):</label>
+    <input type="text" id="footer_rights" name="footer_rights" required>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit">שמור תרגומים</button>
+</form>
+<script src="js/backoffice.js"></script>
+</body>
+</html>
+
+End of file: backoffice.html
+Start of file: index.html
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta tags (translations handled in script.js if needed) -->
+  <title data-translate="title">טושטוש משלוחים - שירות משלוחים מקצועי בכל הארץ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Flag Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@6.7.0/css/flag-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/showcase.css">
+  <link rel="stylesheet" href="css/reviews.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/faq.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="#" class="logo">
+      <img src="assets/logo.png" alt="Logo" />
+    </a>
+    <div class="header-right">
+      <!-- Language Switcher Dropdown -->
+      <div class="language-switcher">
+        <button class="dropdown-toggle">
+          <span class="fi fi-il"></span> <!-- Default flag -->
+        </button>
+        <ul class="dropdown-menu">
+          <li data-lang="he"><span class="fi fi-il"></span> עברית</li>
+          <li data-lang="en"><span class="fi fi-gb"></span> English</li>
+          <li data-lang="es"><span class="fi fi-es"></span> Español</li>
+          <li data-lang="it"><span class="fi fi-it"></span> Italiano</li>
+          <li data-lang="ar"><span class="fi fi-ae"></span> العربية</li>
+          <li data-lang="de"><span class="fi fi-de"></span> Deutsch</li>
+          <li data-lang="pt"><span class="fi fi-pt"></span> Português</li>
+        </ul>
+      </div>
+      <!-- Hamburger Button -->
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+    <!-- Navigation Menu -->
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="#biz-online" data-translate="nav_biz_online">מה זה ביז אונליין?</a></li>
+        <li><a href="#tutorial-videos" data-translate="nav_tutorial_videos">סרטוני הדרכה</a></li>
+        <li><a href="#reviews" data-translate="nav_reviews">חוות דעת</a></li>
+        <li><a href="#faq" data-translate="nav_faq">שאלות ותשובות</a></li>
+        <li><a href="#contact" data-translate="nav_contact">צור קשר</a></li>
+        <!-- Call to Action Buttons -->
+        <li class="cta-button-container">
+          <a href="https://wa.me/yourwhatsappnumber" class="cta-whatsapp-button">
+            <i class="fab fa-whatsapp"></i> <span data-translate="cta_whatsapp">לחצו לתמיכה והדרכה בWhatsApp</span>
+          </a>
+        </li>
+        <li class="cta-button-container">
+          <a href="/login" class="cta-login-button">
+            <i class="fas fa-sign-in-alt"></i> <span data-translate="cta_login">התחברות</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Drawer Menu -->
+  <nav class="drawer-nav" aria-hidden="true">
+    <ul>
+      <li><a href="#biz-online" data-translate="nav_biz_online">מה זה ביז אונליין?</a></li>
+      <li><a href="#tutorial-videos" data-translate="nav_tutorial_videos">סרטוני הדרכה</a></li>
+      <li><a href="#reviews" data-translate="nav_reviews">חוות דעת</a></li>
+      <li><a href="#faq" data-translate="nav_faq">שאלות ותשובות</a></li>
+      <li><a href="#contact" data-translate="nav_contact">צור קשר</a></li>
+      <!-- Call to Action Buttons -->
+      <li class="cta-button-container">
+        <a href="https://wa.me/yourwhatsappnumber" class="cta-whatsapp-button">
+          <i class="fab fa-whatsapp"></i> <span data-translate="cta_whatsapp">לחצו לתמיכה והדרכה בWhatsApp</span>
+        </a>
+      </li>
+      <li class="cta-button-container">
+        <a href="/login" class="cta-login-button">
+          <i class="fas fa-sign-in-alt"></i> <span data-translate="cta_login">התחברות</span>
+        </a>
+      </li>
+    </ul>
+    <section class="delivery-motor">
+      <i class="fas fa-spa"></i>
+    </section>
+  </nav>
+  <!-- Overlay for Drawer -->
+  <div class="drawer-overlay" tabindex="-1" aria-hidden="true"></div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="hero-section">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h2 data-translate="hero_heading">ביז אונליין - bizonline הינו יומן הזמנות דיגיטלי</h2>
+      <p data-translate="hero_text1">מערכת מתקדמת ליצירת הזמנות אונליין מכל מקום, התוכנה ידידותית ונוחה לשימוש.</p>
+      <p data-translate="hero_text2">לאור התפתחות ענף התיירות והאירועים נוצר רצון לתת מענה דווקא לבעלי עסקים אשר מבצעים מידי יום הזמנות המחפשים פתרון ומענה מהיר ונוח בתחום הנופש ותחום האירועים.</p>
+      <p data-translate="hero_text3">בביז אונליין ההזמנה מתבצעת בקליק ומכל מקום, ביומן הזמנות ביז אונליין קיימות אפשרויות טכנולוגיות רבות.</p>
+      <p data-translate="hero_text4">אז מי מאיתנו לא חלם על דרך פשוטה לניהול העסק? בשביל זה אנחנו כאן :-)</p>
+      <a href="#contact" class="cta-button">
+        <i class="fas fa-phone"></i> <span data-translate="cta_schedule_call">תאמו שיחת הדרכה ללא עלות!</span>
+      </a>
+    </div>
+    <div class="hero-video">
+      <div class="tv-container">
+        <!-- SVG TV Frame -->
+        <svg viewBox="0 0 200 150" class="tv-svg">
+          <!-- TV Frame -->
+          <rect x="0" y="0" width="200" height="150" rx="15" ry="15" fill="#000"></rect>
+          <!-- Screen -->
+          <rect x="10" y="10" width="180" height="130" fill="#fff"></rect>
+        </svg>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/M-V7hE1JxDs" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="about-background"></div>
+  <h2 data-translate="about_heading">נותנים לכם את כל הכלים להצלחה</h2>
+  <div class="benefits-container">
+    <div class="benefit-card">
+      <i class="fas fa-file-signature fa-2x benefit-icon"></i>
+      <p data-translate="benefit1">חתימה דיגיטלית המתעדכנת מידית בעת חתימת הלקוח ומופיעה בתוכנה כחתומה.</p>
+    </div>
+    <div class="benefit-card">
+      <i class="fas fa-credit-card fa-2x benefit-icon"></i>
+      <p data-translate="benefit2">סליקת אשראי דרך מסוף שהחברה תקים עבורכם ותוכל אף להנפיק חשבוניות.</p>
+    </div>
+    <div class="benefit-card">
+      <i class="fas fa-calendar-check fa-2x benefit-icon"></i>
+      <p data-translate="benefit3">יומן תפוסה דיגיטלי לניהול הזמנות מכל מקום.</p>
+    </div>
+    <div class="benefit-card">
+      <i class="fas fa-chart-line fa-2x benefit-icon"></i>
+      <p data-translate="benefit4">דוחות וסטטיסטיקות מתקדמות לניהול העסק.</p>
+    </div>
+    <div class="benefit-card">
+      <i class="fas fa-link fa-2x benefit-icon"></i>
+      <p data-translate="benefit5">אפשרות להתממשקות מול בוקינג ואתרים נוספים.</p>
+    </div>
+  </div>
+</section>
+
+<!-- New Showcase Section -->
+<section id="showcase" class="showcase-section">
+  <div class="container">
+    <h2 data-translate="showcase_heading">הציצו למערכת שלנו</h2>
+    <div class="devices-container">
+      <div class="device monitor">
+        <!-- Monitor SVG Frame with embedded image -->
+        <svg viewBox="0 0 512 512" class="monitor-svg">
+          <!-- Monitor Frame -->
+          <rect x="16" y="16" width="480" height="320" rx="20" ry="20" fill="#333" />
+          <!-- Screen (Image) -->
+          <clipPath id="monitor-screen-clip">
+            <rect x="26" y="26" width="460" height="300" rx="15" ry="15" />
+          </clipPath>
+          <image href="assets/image1.png" x="26" y="26" width="460" height="300" clip-path="url(#monitor-screen-clip)" />
+          <!-- Monitor Stand -->
+          <rect x="216" y="356" width="80" height="20" fill="#333" />
+          <rect x="196" y="376" width="120" height="20" fill="#333" rx="10" ry="10" />
+        </svg>
+      </div>
+      <div class="device phone">
+        <!-- Phone SVG Frame with embedded image -->
+        <svg viewBox="0 0 200 400" class="phone-svg">
+          <!-- Phone Frame -->
+          <rect x="10" y="10" width="180" height="380" rx="30" ry="30" fill="#333" />
+          <!-- Screen (Image) -->
+          <clipPath id="phone-screen-clip">
+            <rect x="20" y="50" width="160" height="300" rx="15" ry="15" />
+          </clipPath>
+          <image href="assets/image1.png" x="20" y="50" width="160" height="300" clip-path="url(#phone-screen-clip)" />
+          <!-- Home Button -->
+          <circle cx="100" cy="370" r="10" fill="#555" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- New FAQ Section -->
+<section id="tutorials" class="faq">
+  <h2 data-translate="tutorials_heading">סרטוני הדרכה</h2>
+  <div class="faq-container">
+    <!-- FAQ Item 1 -->
+    <div class="faq-item">
+      <div class="faq-question" tabindex="0">
+        <i class="fas fa-question-circle"></i>
+        <h3 data-translate="tutorial_question1">כיצד להתחבר למערכת?</h3>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p data-translate="tutorial_answer_text1">
+          לניהול יומן התפוסה, ניתן לצפות ולהערוך את זמינות העסק דרך הלוח הראשי.
+        </p>
+        <!-- Video Embed with Screen -->
+        <div class="video-wrapper">
+          <div class="tv-container">
+            <!-- SVG TV Frame -->
+            <svg viewBox="0 0 200 150" class="tv-svg">
+              <!-- TV Frame -->
+              <rect x="0" y="0" width="200" height="150" rx="15" ry="15" fill="#000"></rect>
+              <!-- Screen -->
+              <rect x="10" y="10" width="180" height="130" fill="#fff"></rect>
+            </svg>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/M-V7hE1JxDs" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ Item 2 -->
+    <div class="faq-item">
+      <div class="faq-question" tabindex="0">
+        <i class="fas fa-question-circle"></i>
+        <h3 data-translate="tutorial_question2">איך ליצור הזמנה חדשה?</h3>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p data-translate="tutorial_answer_text2">
+          לניהול יומן התפוסה, ניתן לצפות ולהערוך את זמינות העסק דרך הלוח הראשי.
+        </p>
+        <!-- Video Embed with Screen -->
+        <div class="video-wrapper">
+          <div class="tv-container">
+            <!-- SVG TV Frame -->
+            <svg viewBox="0 0 200 150" class="tv-svg">
+              <!-- TV Frame -->
+              <rect x="0" y="0" width="200" height="150" rx="15" ry="15" fill="#000"></rect>
+              <!-- Screen -->
+              <rect x="10" y="10" width="180" height="130" fill="#fff"></rect>
+            </svg>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/M-V7hE1JxDs" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ Item 3 -->
+    <div class="faq-item">
+      <div class="faq-question" tabindex="0">
+        <i class="fas fa-question-circle"></i>
+        <h3 data-translate="tutorial_question3">ניהול יומן התפוסה</h3>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p data-translate="tutorial_answer_text3">
+          לניהול יומן התפוסה, ניתן לצפות ולהערוך את זמינות העסק דרך הלוח הראשי.
+        </p>
+        <!-- Video Embed with Screen -->
+        <div class="video-wrapper">
+          <div class="tv-container">
+            <!-- SVG TV Frame -->
+            <svg viewBox="0 0 200 150" class="tv-svg">
+              <!-- TV Frame -->
+              <rect x="0" y="0" width="200" height="150" rx="15" ry="15" fill="#000"></rect>
+              <!-- Screen -->
+              <rect x="10" y="10" width="180" height="130" fill="#fff"></rect>
+            </svg>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/M-V7hE1JxDs" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- New Reviews Section -->
+<section id="reviews" class="reviews">
+  <h2 data-translate="reviews_heading">חוות דעת של לקוחות</h2>
+  <div class="reviews-container">
+    <div class="review-card">
+      <div class="review-header">
+        <div class="reviewer-info">
+          <div class="review-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <p data-translate="review_text1">"התחלתי להשתמש בביז אונליין והעסק שלי השתפר משמעותית. המערכת ידידותית ונוחה."</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="reviewer-info">
+          <div class="review-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <p data-translate="review_text2">"בזכות ביז אונליין אני מנהלת את ההזמנות שלי בצורה יעילה ומהירה יותר. ממליצה בחום!"</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="reviewer-info">
+          <div class="review-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <p data-translate="review_text3">"המערכת מאפשרת לי לעקוב אחר ההזמנות בקלות ולשמור על קשר עם הלקוחות."</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="reviewer-info">
+          <div class="review-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <p data-translate="review_text4">"שירות לקוחות מצוין ומערכת שמתאימה בדיוק לצרכים של העסק שלי."</p>
+    </div>
+  </div>
+</section>
+
+<!-- New Contact Form Section -->
+<section id="contact" class="contact-form">
+  <h2 data-translate="contact_heading">צור קשר</h2>
+  <p data-translate="contact_subheading">נשמח לעמוד לשירותכם בכל שאלה או בקשה. צרו איתנו קשר עכשיו לקבלת פרטים נוספים והצעת מחיר מותאמת אישית עבורכם!</p>
+  <form id="contactForm">
+    <!-- Row 1: Name and Phone -->
+    <div class="row">
+      <div class="col">
+        <label for="name" data-translate="contact_label_name">שם מלא</label>
+        <input type="text" name="name" id="name" placeholder="הכנס את שמך המלא" data-translate="contact_placeholder_name" required>
+      </div>
+      <div class="col">
+        <label for="phone" data-translate="contact_label_phone">טלפון</label>
+        <input type="tel" name="phone" id="phone" placeholder="הכנס את מספר הטלפון שלך" data-translate="contact_placeholder_phone" required>
+      </div>
+    </div>
+
+    <!-- Row 2: Email -->
+    <div class="row">
+      <div class="col">
+        <label for="email" data-translate="contact_label_email">אימייל</label>
+        <input type="email" name="email" id="email" placeholder="הכנס את כתובת האימייל שלך" data-translate="contact_placeholder_email" required>
+      </div>
+    </div>
+
+    <!-- Row 3: Message -->
+    <div class="row">
+      <div class="col">
+        <label for="message" data-translate="contact_label_message">הודעה</label>
+        <textarea name="message" id="message" placeholder="הכנס את ההודעה שלך" data-translate="contact_placeholder_message" rows="5" required></textarea>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" data-translate="contact_submit_button">שלח הודעה</button>
+  </form>
+</section>
+
+
+<footer>
+  <p data-translate="footer_rights">כל הזכויות שמורות © 2024 טושטוש משלוחים</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+End of file: index.html
+
+
+Start of file: backoffice.js
+// js/backoffice.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const languageSelect = document.getElementById('language');
+    const translationForm = document.getElementById('translationForm');
+    let currentLang = languageSelect.value;
+
+    // Load existing translations when language changes
+    languageSelect.addEventListener('change', () => {
+        currentLang = languageSelect.value;
+        loadTranslations(currentLang);
+    });
+
+    // Function to load existing translations
+    function loadTranslations(lang) {
+        fetch(`translations/${lang}.json`)
+            .then(response => response.json())
+            .then(data => {
+                // Fill form fields with translations
+                for (const key in data) {
+                    const input = document.getElementById(key);
+                    if (input) {
+                        input.value = data[key];
+                    }
+                }
+            })
+            .catch(() => {
+                // If no translation file exists, reset the form
+                translationForm.reset();
+            });
+    }
+
+    // Save translations to JSON file
+    translationForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Collect data from the form
+        const formData = new FormData(translationForm);
+        const translations = {};
+        formData.forEach((value, key) => {
+            translations[key] = value;
+        });
+
+        // Since there's no server, download the JSON file
+        const dataStr = JSON.stringify(translations, null, 2);
+        const blob = new Blob([dataStr], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+
+        // Create a link to download the file
+        const downloadLink = document.createElement('a');
+        downloadLink.href = url;
+        downloadLink.download = `${currentLang}.json`;
+
+        // Click the link to start the download
+        downloadLink.click();
+
+        // Release the URL
+        URL.revokeObjectURL(url);
+
+        alert('התרגומים נשמרו בהצלחה! אנא העבר את הקובץ לתיקיית translations באתר הראשי.');
+    });
+
+    // Initial load
+    loadTranslations(currentLang);
+});
+
+End of file: backoffice.js
+Start of file: script.js
+// js/script.js
+
+
+// Hamburger and Drawer Functionality
+const hamburger = document.querySelector('.hamburger');
+const drawerNav = document.querySelector('.drawer-nav');
+const drawerOverlay = document.querySelector('.drawer-overlay');
+const drawerLinks = document.querySelectorAll('.drawer-nav ul li a');
+
+const toggleDrawer = () => {
+    const isActive = drawerNav.classList.toggle('active');
+    drawerOverlay.classList.toggle('active');
+    hamburger.classList.toggle('active'); // Toggle 'active' class on hamburger
+    hamburger.setAttribute('aria-expanded', isActive);
+    drawerNav.setAttribute('aria-hidden', !isActive);
+};
+
+// Event listener for hamburger click
+hamburger.addEventListener('click', toggleDrawer);
+
+// Event listener for overlay click to close drawer
+drawerOverlay.addEventListener('click', toggleDrawer);
+
+// Close drawer when a link is clicked
+drawerLinks.forEach(link => {
+    link.addEventListener('click', toggleDrawer);
+});
+
+// Smooth Scrolling with Offset
+const offset = 80; // Adjust this value according to header height
+
+const smoothScroll = (event) => {
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth',
+        });
+    }
+};
+
+// Apply smooth scrolling to all nav links
+const allNavLinks = document.querySelectorAll(
+    'nav ul li a, .drawer-nav ul li a, .cta-button'
+);
+
+allNavLinks.forEach((link) => {
+    link.addEventListener('click', smoothScroll);
+});
+
+// Language Switching Functionality
+const languageSwitcher = document.querySelector('.language-switcher');
+const languageToggle = document.querySelector('.language-switcher .dropdown-toggle');
+const languageMenu = document.querySelector('.language-switcher .dropdown-menu');
+const languageOptions = document.querySelectorAll('.language-switcher .dropdown-menu li');
+
+languageToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    languageMenu.classList.toggle('show');
+});
+
+languageOptions.forEach((option) => {
+    option.addEventListener('click', () => {
+        const selectedLang = option.getAttribute('data-lang');
+        // Update the language
+        setLanguage(selectedLang);
+        // Close the dropdown
+        languageMenu.classList.remove('show');
+    });
+});
+
+// Close the language menu when clicking outside
+document.addEventListener('click', (event) => {
+    if (!languageSwitcher.contains(event.target)) {
+        languageMenu.classList.remove('show');
+    }
+});
+
+// Function to load translation JSON file
+function loadTranslations(lang) {
+    return fetch(`translations/${lang}.json`)
+        .then(response => response.json())
+        .catch(error => {
+            console.error('Error loading translations:', error);
+            return {};
+        });
+}
+
+// Update the language based on the selected translations
+function setLanguage(lang) {
+    loadTranslations(lang).then(selectedTranslations => {
+        if (selectedTranslations) {
+            // Update all elements with data-translate attribute
+            document.querySelectorAll('[data-translate]').forEach((element) => {
+                const key = element.getAttribute('data-translate');
+                if (selectedTranslations[key]) {
+                    if (
+                        element.tagName.toLowerCase() === 'input' ||
+                        element.tagName.toLowerCase() === 'textarea'
+                    ) {
+                        element.placeholder = selectedTranslations[key];
+                    } else if (element.tagName.toLowerCase() === 'title') {
+                        document.title = selectedTranslations[key];
+                    } else {
+                        element.textContent = selectedTranslations[key];
+                    }
+                }
+            });
+
+            // Update the lang and dir attributes on the html tag
+            const htmlTag = document.documentElement;
+            htmlTag.lang = lang;
+            if (lang === 'ar' || lang === 'he') {
+                htmlTag.dir = 'rtl';
+            } else {
+                htmlTag.dir = 'ltr';
+            }
+
+            // Update the flag icon in the language toggle button
+            const selectedOption = document.querySelector(
+                `.language-switcher .dropdown-menu li[data-lang="${lang}"]`
+            );
+            if (selectedOption) {
+                const flagClass = selectedOption.querySelector('.fi').className;
+                languageToggle.querySelector('.fi').className = flagClass;
+            }
+
+            // Store the selected language in localStorage
+            localStorage.setItem('selectedLang', lang);
+        } else {
+            console.error('Translations not found for language:', lang);
+        }
+    });
+}
+
+// On page load, check if a language is stored in localStorage
+document.addEventListener('DOMContentLoaded', () => {
+    const storedLang = localStorage.getItem('selectedLang') || 'he';
+    setLanguage(storedLang);
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Image slideshows for monitor and phone
+    const monitorImages = [
+        'assets/image1.png',
+        // Repeat the same image if needed
+    ];
+
+    const phoneImages = [
+        'assets/image1.png',
+        // Repeat the same image if needed
+    ];
+
+    let monitorIndex = 0;
+    let phoneIndex = 0;
+
+    const monitorImgElement = document.querySelector('.monitor-svg image');
+    const phoneImgElement = document.querySelector('.phone-svg image');
+
+    function changeMonitorImage() {
+        // No change needed since only one image is present
+        monitorImgElement.setAttribute('href', monitorImages[monitorIndex]);
+    }
+
+    function changePhoneImage() {
+        // No change needed since only one image is present
+        phoneImgElement.setAttribute('href', phoneImages[phoneIndex]);
+    }
+
+    // Change images every 3 seconds (optional, no effect with single image)
+    setInterval(changeMonitorImage, 3000);
+    setInterval(changePhoneImage, 3000);
+});
+
+
+// Toggle FAQ answers
+document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+
+        // Allow toggling via keyboard
+        question.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                item.classList.toggle('active');
+            }
+        });
+    });
+});
+
+End of file: script.js
+
+Start of file: ar.json
+{
+  "title": "توشتوش للتوصيل - خدمة توصيل احترافية في جميع أنحاء البلاد",
+  "nav_biz_online": "ما هو بيز أونلاين؟",
+  "nav_tutorial_videos": "فيديوهات تعليمية",
+  "nav_reviews": "آراء العملاء",
+  "nav_faq": "الأسئلة الشائعة",
+  "nav_contact": "اتصل بنا",
+  "cta_whatsapp": "انقر للدعم والإرشاد على واتساب",
+  "cta_login": "تسجيل الدخول",
+  "cta_schedule_call": "جدولة مكالمة تعليمية مجانية!",
+  "hero_heading": "بيز أونلاين - تقويم حجوزات رقمي",
+  "hero_text1": "نظام متقدم لإنشاء الحجوزات عبر الإنترنت من أي مكان؛ البرنامج سهل الاستخدام وودود.",
+  "hero_text2": "نظرًا لتطور صناعة السياحة والفعاليات، هناك رغبة في توفير حل مخصص لأصحاب الأعمال الذين يقومون بالحجوزات اليومية والباحثين عن حل سريع ومريح في مجال الترفيه والفعاليات.",
+  "hero_text3": "مع بيز أونلاين، تتم الحجوزات بنقرة واحدة من أي مكان، ويوفر تقويم حجوزات بيز أونلاين العديد من الميزات التكنولوجية.",
+  "hero_text4": "من منا لم يحلم يومًا بطريقة بسيطة لإدارة الأعمال؟ لهذا نحن هنا :-)",
+  "about_heading": "نقدم لكم جميع الأدوات للنجاح",
+  "benefit1": "توقيع رقمي يتم تحديثه فورًا عند توقيع العميل ويظهر في البرنامج كموثق.",
+  "benefit2": "معالجة بطاقات الائتمان عبر جهاز طرفي ستقوم الشركة بإعداده لكم ويمكنه أيضًا إصدار الفواتير.",
+  "benefit3": "تقويم إشغال رقمي لإدارة الحجوزات من أي مكان.",
+  "benefit4": "تقارير وإحصائيات متقدمة لإدارة الأعمال.",
+  "benefit5": "إمكانية التكامل مع بوكينج ومواقع أخرى.",
+  "showcase_heading": "ألق نظرة على نظامنا",
+  "reviews_heading": "آراء العملاء",
+  "review_text1": "\"بدأت باستخدام بيز أونلاين وتحسن عملي بشكل كبير. النظام ودود وسهل الاستخدام.\"",
+  "review_text2": "\"بفضل بيز أونلاين، أدير حجوزاتي بشكل أكثر كفاءة وسرعة. أوصي به بشدة!\"",
+  "review_text3": "\"يسمح لي النظام بتتبع الحجوزات بسهولة والبقاء على اتصال مع العملاء.\"",
+  "review_text4": "\"خدمة عملاء ممتازة ونظام يتناسب تمامًا مع احتياجات عملي.\"",
+  "contact_heading": "اتصل بنا",
+  "contact_subheading": "يسعدنا مساعدتك في أي سؤال أو طلب. اتصل بنا الآن للحصول على مزيد من المعلومات وعرض أسعار مخصص!",
+  "contact_label_name": "الاسم الكامل",
+  "contact_placeholder_name": "أدخل اسمك الكامل",
+  "contact_label_phone": "الهاتف",
+  "contact_placeholder_phone": "أدخل رقم هاتفك",
+  "contact_label_email": "البريد الإلكتروني",
+  "contact_placeholder_email": "أدخل عنوان بريدك الإلكتروني",
+  "contact_label_message": "الرسالة",
+  "contact_placeholder_message": "أدخل رسالتك",
+  "contact_submit_button": "إرسال رسالة",
+  "footer_rights": "جميع الحقوق محفوظة © 2024 توشتوش للتوصيل",
+  "tutorials_heading": "فيديوهات تعليمية",
+  "tutorial_question1": "كيف تسجل الدخول إلى النظام؟",
+  "tutorial_answer_text1": "لتسجيل الدخول إلى النظام، أدخل اسم المستخدم وكلمة المرور المقدمة أثناء التسجيل.",
+  "tutorial_question2": "كيفية إنشاء حجز جديد؟",
+  "tutorial_answer_text2": "لإنشاء حجز جديد، انقر على زر \"حجز جديد\" واملأ تفاصيل العميل والحجز.",
+  "tutorial_question3": "إدارة تقويم الإشغال",
+  "tutorial_answer_text3": "لإدارة تقويم الإشغال، يمكنك عرض وتعديل توفر عملك من خلال لوحة التحكم الرئيسية."
+}
+
+End of file: ar.json
+Start of file: de.json
+{
+  "title": "Toshtosh Lieferungen - Professioneller Lieferservice im ganzen Land",
+  "nav_biz_online": "Was ist BizOnline?",
+  "nav_tutorial_videos": "Tutorial-Videos",
+  "nav_reviews": "Bewertungen",
+  "nav_faq": "Häufige Fragen",
+  "nav_contact": "Kontaktieren Sie uns",
+  "cta_whatsapp": "Klicken Sie für Unterstützung und Beratung auf WhatsApp",
+  "cta_login": "Anmelden",
+  "cta_schedule_call": "Vereinbaren Sie ein kostenloses Tutorial-Gespräch!",
+  "hero_heading": "BizOnline - Ein Digitaler Buchungskalender",
+  "hero_text1": "Ein fortschrittliches System zur Erstellung von Online-Buchungen von überall aus; die Software ist benutzerfreundlich und einfach zu bedienen.",
+  "hero_text2": "Aufgrund der Entwicklung der Tourismus- und Veranstaltungsbranche besteht der Wunsch, eine Lösung speziell für Geschäftsinhaber bereitzustellen, die täglich Buchungen vornehmen und nach einer schnellen und bequemen Lösung im Bereich Freizeit und Veranstaltungen suchen.",
+  "hero_text3": "Mit BizOnline erfolgen Buchungen mit einem Klick von überall aus, und der BizOnline-Buchungskalender bietet viele technologische Funktionen.",
+  "hero_text4": "Wer von uns hat nicht davon geträumt, eine einfache Möglichkeit zur Geschäftsführung zu haben? Dafür sind wir hier :-)",
+  "about_heading": "Wir bieten Ihnen alle Werkzeuge für Ihren Erfolg",
+  "benefit1": "Digitale Unterschrift, die sich sofort nach der Unterschrift des Kunden aktualisiert und im System als unterschrieben angezeigt wird.",
+  "benefit2": "Kreditkartenerfassung über ein Terminal, das das Unternehmen für Sie einrichtet und kann auch Rechnungen ausstellen.",
+  "benefit3": "Digitaler Belegungskalender zur Verwaltung von Buchungen von überall aus.",
+  "benefit4": "Fortgeschrittene Berichte und Statistiken zur Geschäftsführung.",
+  "benefit5": "Möglichkeit zur Integration mit Booking und anderen Websites.",
+  "showcase_heading": "Werfen Sie einen Blick auf unser System",
+  "reviews_heading": "Kundenbewertungen",
+  "review_text1": "\"Ich habe angefangen, BizOnline zu nutzen, und mein Geschäft hat sich erheblich verbessert. Das System ist freundlich und einfach zu bedienen.\"",
+  "review_text2": "\"Dank BizOnline verwalte ich meine Buchungen effizienter und schneller. Sehr empfehlenswert!\"",
+  "review_text3": "\"Das System ermöglicht es mir, Buchungen einfach zu verfolgen und den Kontakt zu den Kunden zu halten.\"",
+  "review_text4": "\"Ausgezeichneter Kundenservice und ein System, das genau auf die Bedürfnisse meines Geschäfts zugeschnitten ist.\"",
+  "contact_heading": "Kontaktieren Sie uns",
+  "contact_subheading": "Wir helfen Ihnen gerne bei Fragen oder Anfragen. Kontaktieren Sie uns jetzt für weitere Informationen und ein maßgeschneidertes Angebot!",
+  "contact_label_name": "Vollständiger Name",
+  "contact_placeholder_name": "Geben Sie Ihren vollständigen Namen ein",
+  "contact_label_phone": "Telefon",
+  "contact_placeholder_phone": "Geben Sie Ihre Telefonnummer ein",
+  "contact_label_email": "E-Mail",
+  "contact_placeholder_email": "Geben Sie Ihre E-Mail-Adresse ein",
+  "contact_label_message": "Nachricht",
+  "contact_placeholder_message": "Geben Sie Ihre Nachricht ein",
+  "contact_submit_button": "Nachricht senden",
+  "footer_rights": "Alle Rechte vorbehalten © 2024 Toshtosh Lieferungen",
+  "tutorials_heading": "Tutorial-Videos",
+  "tutorial_question1": "Wie loggt man sich ins System ein?",
+  "tutorial_answer_text1": "Um sich ins System einzuloggen, geben Sie den Benutzernamen und das Passwort ein, die Sie bei der Registrierung erhalten haben.",
+  "tutorial_question2": "Wie erstellt man eine neue Buchung?",
+  "tutorial_answer_text2": "Um eine neue Buchung zu erstellen, klicken Sie auf die Schaltfläche \"Neue Buchung\" und füllen Sie die Kunden- und Buchungsdetails aus.",
+  "tutorial_question3": "Verwaltung des Belegungskalenders",
+  "tutorial_answer_text3": "Um den Belegungskalender zu verwalten, können Sie die Verfügbarkeit Ihres Geschäfts über das Haupt-Dashboard einsehen und bearbeiten."
+}
+
+End of file: de.json
+Start of file: en.json
+{
+  "title": "Toshtosh Deliveries - Professional Delivery Service Nationwide",
+  "nav_biz_online": "What is BizOnline?",
+  "nav_tutorial_videos": "Tutorial Videos",
+  "nav_reviews": "Reviews",
+  "nav_faq": "FAQ",
+  "nav_contact": "Contact Us",
+  "cta_whatsapp": "Click for Support and Guidance on WhatsApp",
+  "cta_login": "Login",
+  "cta_schedule_call": "Schedule a Free Tutorial Call!",
+  "hero_heading": "BizOnline - A Digital Booking Calendar",
+  "hero_text1": "An advanced system for creating online bookings from anywhere; the software is user-friendly and easy to use.",
+  "hero_text2": "Due to the development of the tourism and events industry, there is a desire to provide a solution specifically for business owners who make daily bookings and are looking for a quick and convenient solution in the field of leisure and events.",
+  "hero_text3": "With BizOnline, bookings are made with a click from anywhere, and the BizOnline booking calendar has many technological features.",
+  "hero_text4": "So who among us hasn't dreamed of a simple way to manage the business? That's why we're here :-)",
+  "about_heading": "We Provide All the Tools for Your Success",
+  "benefit1": "Digital signature that updates immediately upon customer signing and appears in the software as signed.",
+  "benefit2": "Credit card processing through a terminal that the company will set up for you and can also issue invoices.",
+  "benefit3": "Digital occupancy calendar for managing bookings from anywhere.",
+  "benefit4": "Advanced reports and statistics for business management.",
+  "benefit5": "Ability to integrate with Booking and other websites.",
+  "showcase_heading": "Take a Peek at Our System",
+  "reviews_heading": "Customer Reviews",
+  "review_text1": "\"I started using BizOnline, and my business has improved significantly. The system is friendly and easy to use.\"",
+  "review_text2": "\"Thanks to BizOnline, I manage my bookings more efficiently and quickly. Highly recommended!\"",
+  "review_text3": "\"The system allows me to easily track bookings and stay in touch with customers.\"",
+  "review_text4": "\"Excellent customer service and a system that fits exactly the needs of my business.\"",
+  "contact_heading": "Contact Us",
+  "contact_subheading": "We are happy to assist you with any questions or requests. Contact us now for more information and a personalized quote!",
+  "contact_label_name": "Full Name",
+  "contact_placeholder_name": "Enter your full name",
+  "contact_label_phone": "Phone",
+  "contact_placeholder_phone": "Enter your phone number",
+  "contact_label_email": "Email",
+  "contact_placeholder_email": "Enter your email address",
+  "contact_label_message": "Message",
+  "contact_placeholder_message": "Enter your message",
+  "contact_submit_button": "Send Message",
+  "footer_rights": "All rights reserved © 2024 Toshtosh Deliveries",
+  "tutorials_heading": "Tutorial Videos",
+  "tutorial_question1": "How to Log into the System?",
+  "tutorial_answer_text1": "To log into the system, enter the username and password provided during registration.",
+  "tutorial_question2": "How to Create a New Booking?",
+  "tutorial_answer_text2": "To create a new booking, click on the \"New Booking\" button and fill in the customer and booking details.",
+  "tutorial_question3": "Managing the Occupancy Calendar",
+  "tutorial_answer_text3": "To manage the occupancy calendar, you can view and edit your business availability through the main dashboard."
+}
+
+End of file: en.json
+Start of file: es.json
+{
+  "title": "Toshtosh Entregas - Servicio de Entrega Profesional en Todo el País",
+  "nav_biz_online": "¿Qué es BizOnline?",
+  "nav_tutorial_videos": "Videos Tutoriales",
+  "nav_reviews": "Reseñas",
+  "nav_faq": "Preguntas Frecuentes",
+  "nav_contact": "Contáctanos",
+  "cta_whatsapp": "Haz clic para Soporte y Asesoramiento en WhatsApp",
+  "cta_login": "Iniciar Sesión",
+  "cta_schedule_call": "¡Programa una Llamada de Tutorial Gratuita!",
+  "hero_heading": "BizOnline - Un Calendario de Reservas Digital",
+  "hero_text1": "Un sistema avanzado para crear reservas en línea desde cualquier lugar; el software es fácil de usar y amigable.",
+  "hero_text2": "Debido al desarrollo de la industria del turismo y eventos, hay un deseo de proporcionar una solución específicamente para los dueños de negocios que realizan reservas diarias y buscan una solución rápida y conveniente en el campo del ocio y eventos.",
+  "hero_text3": "Con BizOnline, las reservas se realizan con un clic desde cualquier lugar, y el calendario de reservas de BizOnline tiene muchas características tecnológicas.",
+  "hero_text4": "¿Quién de nosotros no ha soñado con una forma simple de gestionar el negocio? ¡Por eso estamos aquí :-)",
+  "about_heading": "Proporcionamos Todas las Herramientas para Tu Éxito",
+  "benefit1": "Firma digital que se actualiza inmediatamente al firmar por parte del cliente y aparece en el software como firmada.",
+  "benefit2": "Procesamiento de tarjetas de crédito a través de una terminal que la empresa configurará para ti y también puede emitir facturas.",
+  "benefit3": "Calendario de ocupación digital para gestionar reservas desde cualquier lugar.",
+  "benefit4": "Informes y estadísticas avanzadas para la gestión del negocio.",
+  "benefit5": "Posibilidad de integrarse con Booking y otros sitios web.",
+  "showcase_heading": "Echa un Vistazo a Nuestro Sistema",
+  "reviews_heading": "Reseñas de Clientes",
+  "review_text1": "\"Empecé a usar BizOnline y mi negocio mejoró significativamente. El sistema es amigable y fácil de usar.\"",
+  "review_text2": "\"Gracias a BizOnline, gestiono mis reservas de manera más eficiente y rápida. ¡Muy recomendable!\"",
+  "review_text3": "\"El sistema me permite rastrear fácilmente las reservas y mantenerme en contacto con los clientes.\"",
+  "review_text4": "\"Excelente servicio al cliente y un sistema que se adapta exactamente a las necesidades de mi negocio.\"",
+  "contact_heading": "Contáctanos",
+  "contact_subheading": "Estamos felices de ayudarte con cualquier pregunta o solicitud. ¡Contáctanos ahora para más información y una cotización personalizada!",
+  "contact_label_name": "Nombre Completo",
+  "contact_placeholder_name": "Ingresa tu nombre completo",
+  "contact_label_phone": "Teléfono",
+  "contact_placeholder_phone": "Ingresa tu número de teléfono",
+  "contact_label_email": "Correo Electrónico",
+  "contact_placeholder_email": "Ingresa tu dirección de correo electrónico",
+  "contact_label_message": "Mensaje",
+  "contact_placeholder_message": "Ingresa tu mensaje",
+  "contact_submit_button": "Enviar Mensaje",
+  "footer_rights": "Todos los derechos reservados © 2024 Toshtosh Entregas",
+  "tutorials_heading": "Videos Tutoriales",
+  "tutorial_question1": "¿Cómo iniciar sesión en el sistema?",
+  "tutorial_answer_text1": "Para iniciar sesión en el sistema, ingrese el nombre de usuario y contraseña proporcionados durante el registro.",
+  "tutorial_question2": "¿Cómo crear una nueva reserva?",
+  "tutorial_answer_text2": "Para crear una nueva reserva, haga clic en el botón \"Nueva Reserva\" y complete los detalles del cliente y la reserva.",
+  "tutorial_question3": "Gestionar el Calendario de Ocupación",
+  "tutorial_answer_text3": "Para gestionar el calendario de ocupación, puede ver y editar la disponibilidad de su negocio a través del panel principal."
+}
+
+End of file: es.json
+Start of file: he.json
+{
+  "title": "ביז אונליין - יומן הזמנות דיגיטלי לעסקים",
+  "nav_biz_online": "מה זה ביז אונליין?",
+  "nav_tutorial_videos": "סרטוני הדרכה",
+  "nav_reviews": "חוות דעת",
+  "nav_faq": "שאלות ותשובות",
+  "nav_contact": "צור קשר",
+  "cta_whatsapp": "לחצו לתמיכה והדרכה בWhatsApp",
+  "cta_login": "התחברות",
+  "cta_schedule_call": "תאמו שיחת הדרכה ללא עלות!",
+  "hero_heading": "ביז אונליין - bizonline הינו יומן הזמנות דיגיטלי",
+  "hero_text1": "מערכת מתקדמת ליצירת הזמנות אונליין מכל מקום, התוכנה ידידותית ונוחה לשימוש.",
+  "hero_text2": "לאור התפתחות ענף התיירות והאירועים נוצר רצון לתת מענה דווקא לבעלי עסקים אשר מבצעים מידי יום הזמנות המחפשים פתרון ומענה מהיר ונוח בתחום הנופש ותחום האירועים.",
+  "hero_text3": "בביז אונליין ההזמנה מתבצעת בקליק ומכל מקום, ביומן הזמנות ביז אונליין קיימות אפשרויות טכנולוגיות רבות.",
+  "hero_text4": "אז מי מאיתנו לא חלם על דרך פשוטה לניהול העסק? בשביל זה אנחנו כאן :-)",
+  "about_heading": "נותנים לכם את כל הכלים להצלחה",
+  "benefit1": "חתימה דיגיטלית המתעדכנת מידית בעת חתימת הלקוח ומופיעה בתוכנה כחתומה.",
+  "benefit2": "סליקת אשראי דרך מסוף שהחברה תקים עבורכם ותוכל אף להנפיק חשבוניות.",
+  "benefit3": "יומן תפוסה דיגיטלי לניהול הזמנות מכל מקום.",
+  "benefit4": "דוחות וסטטיסטיקות מתקדמות לניהול העסק.",
+  "benefit5": "אפשרות להתממשקות מול בוקינג ואתרים נוספים.",
+  "showcase_heading": "הציצו למערכת שלנו",
+  "reviews_heading": "חוות דעת של לקוחות",
+  "review_text1": "\"התחלתי להשתמש בביז אונליין והעסק שלי השתפר משמעותית. המערכת ידידותית ונוחה.\"",
+  "review_text2": "\"בזכות ביז אונליין אני מנהלת את ההזמנות שלי בצורה יעילה ומהירה יותר. ממליצה בחום!\"",
+  "review_text3": "\"המערכת מאפשרת לי לעקוב אחר ההזמנות בקלות ולשמור על קשר עם הלקוחות.\"",
+  "review_text4": "\"שירות לקוחות מצוין ומערכת שמתאימה בדיוק לצרכים של העסק שלי.\"",
+  "contact_heading": "צור קשר",
+  "contact_subheading": "נשמח לעמוד לשירותכם בכל שאלה או בקשה. צרו איתנו קשר עכשיו לקבלת פרטים נוספים והצעת מחיר מותאמת אישית עבורכם!",
+  "contact_label_name": "שם מלא",
+  "contact_label_phone": "טלפון",
+  "contact_label_email": "אימייל",
+  "contact_label_message": "הודעה",
+  "contact_submit_button": "שלח הודעה",
+  "footer_rights": "כל הזכויות שמורות © 2024 ביז אונליין",
+  "tutorials_heading": "סרטוני הדרכה",
+  "tutorial_question1": "כיצד להתחבר למערכת?",
+  "tutorial_answer_text1": "כדי להתחבר למערכת, עליך להזין את שם המשתמש והסיסמה שסופקו לך בעת ההרשמה.",
+  "tutorial_question2": "איך ליצור הזמנה חדשה?",
+  "tutorial_answer_text2": "ליצירת הזמנה חדשה, יש ללחוץ על כפתור \"הזמנה חדשה\" ולמלא את פרטי הלקוח וההזמנה.",
+  "tutorial_question3": "ניהול יומן התפוסה",
+  "tutorial_answer_text3": "לניהול יומן התפוסה, ניתן לצפות ולהערוך את זמינות העסק דרך הלוח הראשי."
+}
+
+End of file: he.json
+Start of file: it.json
+{
+  "title": "Toshtosh Entregas - Serviço de Entrega Profissional em Todo o País",
+  "nav_biz_online": "O que é BizOnline?",
+  "nav_tutorial_videos": "Vídeos Tutoriais",
+  "nav_reviews": "Avaliações",
+  "nav_faq": "Perguntas Frequentes",
+  "nav_contact": "Contate-Nos",
+  "cta_whatsapp": "Clique para Suporte e Orientação no WhatsApp",
+  "cta_login": "Entrar",
+  "cta_schedule_call": "Agende uma Chamada Tutorial Gratuita!",
+  "hero_heading": "BizOnline - Um Calendário de Reservas Digital",
+  "hero_text1": "Um sistema avançado para criar reservas online de qualquer lugar; o software é amigável e fácil de usar.",
+  "hero_text2": "Devido ao desenvolvimento da indústria de turismo e eventos, há o desejo de fornecer uma solução especificamente para os proprietários de negócios que fazem reservas diárias e procuram uma solução rápida e conveniente no campo do lazer e eventos.",
+  "hero_text3": "Com o BizOnline, as reservas são feitas com um clique de qualquer lugar, e o calendário de reservas do BizOnline possui muitas características tecnológicas.",
+  "hero_text4": "Quem de nós nunca sonhou com uma maneira simples de gerenciar o negócio? É por isso que estamos aqui :-)",
+  "about_heading": "Fornecemos Todas as Ferramentas para o Seu Sucesso",
+  "benefit1": "Assinatura digital que se atualiza imediatamente ao ser assinada pelo cliente e aparece no software como assinada.",
+  "benefit2": "Processamento de cartão de crédito através de um terminal que a empresa configurará para você e também pode emitir faturas.",
+  "benefit3": "Calendário de ocupação digital para gerenciar reservas de qualquer lugar.",
+  "benefit4": "Relatórios e estatísticas avançadas para a gestão de negócios.",
+  "benefit5": "Possibilidade de integrar com Booking e outros sites.",
+  "showcase_heading": "Dê uma Olhada no Nosso Sistema",
+  "reviews_heading": "Avaliações de Clientes",
+  "review_text1": "\"Comecei a usar o BizOnline e meu negócio melhorou significativamente. O sistema é amigável e fácil de usar.\"",
+  "review_text2": "\"Graças ao BizOnline, gerencio minhas reservas de forma mais eficiente e rápida. Muito recomendado!\"",
+  "review_text3": "\"O sistema me permite rastrear facilmente as reservas e manter contato com os clientes.\"",
+  "review_text4": "\"Excelente atendimento ao cliente e um sistema que se adapta exatamente às necessidades do meu negócio.\"",
+  "contact_heading": "Contate-Nos",
+  "contact_subheading": "Estamos felizes em ajudar com qualquer pergunta ou solicitação. Entre em contato agora para mais informações e um orçamento personalizado!",
+  "contact_label_name": "Nome Completo",
+  "contact_placeholder_name": "Insira seu nome completo",
+  "contact_label_phone": "Telefone",
+  "contact_placeholder_phone": "Insira seu número de telefone",
+  "contact_label_email": "Email",
+  "contact_placeholder_email": "Insira seu endereço de email",
+  "contact_label_message": "Mensagem",
+  "contact_placeholder_message": "Insira sua mensagem",
+  "contact_submit_button": "Enviar Mensagem",
+  "footer_rights": "Todos os direitos reservados © 2024 Toshtosh Entregas",
+  "tutorials_heading": "Video Tutorial",
+  "tutorial_question1": "Come accedere al sistema?",
+  "tutorial_answer_text1": "Per accedere al sistema, inserisci il nome utente e la password forniti durante la registrazione.",
+  "tutorial_question2": "Come creare una nuova prenotazione?",
+  "tutorial_answer_text2": "Per creare una nuova prenotazione, clicca sul pulsante \"Nuova Prenotazione\" e compila i dettagli del cliente e della prenotazione.",
+  "tutorial_question3": "Gestione del Calendario di Occupazione",
+  "tutorial_answer_text3": "Per gestire il calendario di occupazione, puoi visualizzare e modificare la disponibilità del tuo business attraverso la dashboard principale."
+}
+
+End of file: it.json
+Start of file: pt.json
+{
+  "title": "Toshtosh Deliveries - Professional Delivery Service Nationwide",
+  "nav_biz_online": "What is BizOnline?",
+  "nav_tutorial_videos": "Tutorial Videos",
+  "nav_reviews": "Reviews",
+  "nav_faq": "FAQ",
+  "nav_contact": "Contact Us",
+  "cta_whatsapp": "Click for Support and Guidance on WhatsApp",
+  "cta_login": "Login",
+  "cta_schedule_call": "Schedule a Free Tutorial Call!",
+  "hero_heading": "BizOnline - A Digital Booking Calendar",
+  "hero_text1": "An advanced system for creating online bookings from anywhere; the software is user-friendly and easy to use.",
+  "hero_text2": "Due to the development of the tourism and events industry, there is a desire to provide a solution specifically for business owners who make daily bookings and are looking for a quick and convenient solution in the field of leisure and events.",
+  "hero_text3": "With BizOnline, bookings are made with a click from anywhere, and the BizOnline booking calendar has many technological features.",
+  "hero_text4": "So who among us hasn't dreamed of a simple way to manage the business? That's why we're here :-)",
+  "about_heading": "We Provide All the Tools for Your Success",
+  "benefit1": "Digital signature that updates immediately upon customer signing and appears in the software as signed.",
+  "benefit2": "Credit card processing through a terminal that the company will set up for you and can also issue invoices.",
+  "benefit3": "Digital occupancy calendar for managing bookings from anywhere.",
+  "benefit4": "Advanced reports and statistics for business management.",
+  "benefit5": "Ability to integrate with Booking and other websites.",
+  "showcase_heading": "Take a Peek at Our System",
+  "reviews_heading": "Customer Reviews",
+  "review_text1": "\"I started using BizOnline, and my business has improved significantly. The system is friendly and easy to use.\"",
+  "review_text2": "\"Thanks to BizOnline, I manage my bookings more efficiently and quickly. Highly recommended!\"",
+  "review_text3": "\"The system allows me to easily track bookings and stay in touch with customers.\"",
+  "review_text4": "\"Excellent customer service and a system that fits exactly the needs of my business.\"",
+  "contact_heading": "Contact Us",
+  "contact_subheading": "We are happy to assist you with any questions or requests. Contact us now for more information and a personalized quote!",
+  "contact_label_name": "Full Name",
+  "contact_placeholder_name": "Enter your full name",
+  "contact_label_phone": "Phone",
+  "contact_placeholder_phone": "Enter your phone number",
+  "contact_label_email": "Email",
+  "contact_placeholder_email": "Enter your email address",
+  "contact_label_message": "Message",
+  "contact_placeholder_message": "Enter your message",
+  "contact_submit_button": "Send Message",
+  "footer_rights": "All rights reserved © 2024 Toshtosh Deliveries",
+  "tutorials_heading": "Vídeos Tutoriais",
+  "tutorial_question1": "Como fazer login no sistema?",
+  "tutorial_answer_text1": "Para fazer login no sistema, insira o nome de usuário e a senha fornecidos durante o registro.",
+  "tutorial_question2": "Como criar uma nova reserva?",
+  "tutorial_answer_text2": "Para criar uma nova reserva, clique no botão \"Nova Reserva\" e preencha os detalhes do cliente e da reserva.",
+  "tutorial_question3": "Gerenciando o Calendário de Ocupação",
+  "tutorial_answer_text3": "Para gerenciar o calendário de ocupação, você pode visualizar e editar a disponibilidade do seu negócio através do painel principal."
+}
+
+End of file: pt.json

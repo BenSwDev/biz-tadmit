@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>בק-אופיס - ניהול תרגומים</title>
+  <link rel="stylesheet" href="css/backoffice.css">
+</head>
+<body>
+<h1>בק-אופיס - ניהול תרגומים</h1>
+<div class="language-selector">
+  <label for="language">בחר שפה:</label>
+  <select id="language">
+    <option value="he">עברית</option>
+    <option value="en">English</option>
+    <option value="es">Español</option>
+    <option value="it">Italiano</option>
+    <option value="pt">Português</option>
+    <option value="ar">العربية</option>
+    <option value="de">Deutsch</option>
+  </select>
+</div>
+<form id="translationForm">
+  <!-- Page Title -->
+  <div class="form-group">
+    <label for="title">כותרת הדף (`title`):</label>
+    <input type="text" id="title" name="title" required>
+  </div>
+
+  <!-- Navigation -->
+  <h2>ניווט</h2>
+  <div class="form-group">
+    <label for="nav_biz_online">מה זה ביז אונליין? (`nav_biz_online`):</label>
+    <input type="text" id="nav_biz_online" name="nav_biz_online" required>
+  </div>
+  <div class="form-group">
+    <label for="nav_solutions">הפתרונות שלנו (`nav_solutions`):</label>
+    <input type="text" id="nav_solutions" name="nav_solutions" required>
+  </div>
+  <div class="form-group">
+    <label for="nav_tutorial_videos">סרטוני הדרכה (`nav_tutorial_videos`):</label>
+    <input type="text" id="nav_tutorial_videos" name="nav_tutorial_videos" required>
+  </div>
+  <div class="form-group">
+    <label for="nav_faq">שאלות ותשובות (`nav_faq`):</label>
+    <input type="text" id="nav_faq" name="nav_faq" required>
+  </div>
+  <div class="form-group">
+    <label for="nav_contact">צור קשר (`nav_contact`):</label>
+    <input type="text" id="nav_contact" name="nav_contact" required>
+  </div>
+
+  <!-- Call to Action Buttons -->
+  <h2>כפתורי קריאה לפעולה (CTA)</h2>
+  <div class="form-group">
+    <label for="cta_whatsapp">לחצו לתמיכה והדרכה בWhatsApp (`cta_whatsapp`):</label>
+    <input type="text" id="cta_whatsapp" name="cta_whatsapp" required>
+  </div>
+  <div class="form-group">
+    <label for="cta_login">התחברות (`cta_login`):</label>
+    <input type="text" id="cta_login" name="cta_login" required>
+  </div>
+  <div class="form-group">
+    <label for="cta_schedule_call">תאמו שיחת הדרכה ללא עלות! (`cta_schedule_call`):</label>
+    <input type="text" id="cta_schedule_call" name="cta_schedule_call" required>
+  </div>
+
+  <!-- Hero Section -->
+  <h2>חלק גיבור (Hero Section)</h2>
+  <div class="form-group">
+    <label for="hero_heading">כותרת (`hero_heading`):</label>
+    <input type="text" id="hero_heading" name="hero_heading" required>
+  </div>
+  <div class="form-group">
+    <label for="hero_text1">טקסט 1 (`hero_text1`):</label>
+    <textarea id="hero_text1" name="hero_text1" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="hero_text2">טקסט 2 (`hero_text2`):</label>
+    <textarea id="hero_text2" name="hero_text2" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="hero_text3">טקסט 3 (`hero_text3`):</label>
+    <textarea id="hero_text3" name="hero_text3" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="hero_text4">טקסט 4 (`hero_text4`):</label>
+    <textarea id="hero_text4" name="hero_text4" required></textarea>
+  </div>
+
+  <!-- About Section -->
+  <h2>אודות</h2>
+  <div class="form-group">
+    <label for="about_heading">כותרת (`about_heading`):</label>
+    <input type="text" id="about_heading" name="about_heading" required>
+  </div>
+
+  <!-- Benefits -->
+  <h2>יתרונות</h2>
+  <div class="form-group">
+    <label for="benefit1">יתרון 1 (`benefit1`):</label>
+    <textarea id="benefit1" name="benefit1" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="benefit2">יתרון 2 (`benefit2`):</label>
+    <textarea id="benefit2" name="benefit2" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="benefit3">יתרון 3 (`benefit3`):</label>
+    <textarea id="benefit3" name="benefit3" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="benefit4">יתרון 4 (`benefit4`):</label>
+    <textarea id="benefit4" name="benefit4" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="benefit5">יתרון 5 (`benefit5`):</label>
+    <textarea id="benefit5" name="benefit5" required></textarea>
+  </div>
+
+  <!-- Showcase Section -->
+  <h2>הצג (Showcase)</h2>
+  <div class="form-group">
+    <label for="showcase_heading">כותרת (`showcase_heading`):</label>
+    <input type="text" id="showcase_heading" name="showcase_heading" required>
+  </div>
+
+  <!-- Reviews Section -->
+  <h2>חוות דעת</h2>
+  <div class="form-group">
+    <label for="reviews_heading">כותרת (`reviews_heading`):</label>
+    <input type="text" id="reviews_heading" name="reviews_heading" required>
+  </div>
+  <div class="form-group">
+    <label for="review_text1">חוות דעת 1 (`review_text1`):</label>
+    <textarea id="review_text1" name="review_text1" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="review_text2">חוות דעת 2 (`review_text2`):</label>
+    <textarea id="review_text2" name="review_text2" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="review_text3">חוות דעת 3 (`review_text3`):</label>
+    <textarea id="review_text3" name="review_text3" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="review_text4">חוות דעת 4 (`review_text4`):</label>
+    <textarea id="review_text4" name="review_text4" required></textarea>
+  </div>
+
+  <!-- Contact Section -->
+  <h2>צור קשר</h2>
+  <div class="form-group">
+    <label for="contact_heading">כותרת (`contact_heading`):</label>
+    <input type="text" id="contact_heading" name="contact_heading" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_subheading">תת-כותרת (`contact_subheading`):</label>
+    <textarea id="contact_subheading" name="contact_subheading" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="contact_label_name">תווית שם (`contact_label_name`):</label>
+    <input type="text" id="contact_label_name" name="contact_label_name" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_placeholder_name">Placeholder שם (`contact_placeholder_name`):</label>
+    <input type="text" id="contact_placeholder_name" name="contact_placeholder_name" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_label_phone">תווית טלפון (`contact_label_phone`):</label>
+    <input type="text" id="contact_label_phone" name="contact_label_phone" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_placeholder_phone">Placeholder טלפון (`contact_placeholder_phone`):</label>
+    <input type="text" id="contact_placeholder_phone" name="contact_placeholder_phone" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_label_email">תווית אימייל (`contact_label_email`):</label>
+    <input type="text" id="contact_label_email" name="contact_label_email" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_placeholder_email">Placeholder אימייל (`contact_placeholder_email`):</label>
+    <input type="text" id="contact_placeholder_email" name="contact_placeholder_email" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_label_message">תווית הודעה (`contact_label_message`):</label>
+    <input type="text" id="contact_label_message" name="contact_label_message" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_placeholder_message">Placeholder הודעה (`contact_placeholder_message`):</label>
+    <input type="text" id="contact_placeholder_message" name="contact_placeholder_message" required>
+  </div>
+  <div class="form-group">
+    <label for="contact_submit_button">כפתור שלח (`contact_submit_button`):</label>
+    <input type="text" id="contact_submit_button" name="contact_submit_button" required>
+  </div>
+
+  <!-- Tutorials Section -->
+  <h2>סרטוני הדרכה</h2>
+  <div class="form-group">
+    <label for="tutorials_heading">כותרת (`tutorials_heading`):</label>
+    <input type="text" id="tutorials_heading" name="tutorials_heading" required>
+  </div>
+  <div class="form-group">
+    <label for="tutorial_question1">שאלה 1 (`tutorial_question1`):</label>
+    <input type="text" id="tutorial_question1" name="tutorial_question1" required>
+  </div>
+  <div class="form-group">
+    <label for="tutorial_answer_text1">תשובה טקסט 1 (`tutorial_answer_text1`):</label>
+    <textarea id="tutorial_answer_text1" name="tutorial_answer_text1" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="tutorial_question2">שאלה 2 (`tutorial_question2`):</label>
+    <input type="text" id="tutorial_question2" name="tutorial_question2" required>
+  </div>
+  <div class="form-group">
+    <label for="tutorial_answer_text2">תשובה טקסט 2 (`tutorial_answer_text2`):</label>
+    <textarea id="tutorial_answer_text2" name="tutorial_answer_text2" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="tutorial_question3">שאלה 3 (`tutorial_question3`):</label>
+    <input type="text" id="tutorial_question3" name="tutorial_question3" required>
+  </div>
+  <div class="form-group">
+    <label for="tutorial_answer_text3">תשובה טקסט 3 (`tutorial_answer_text3`):</label>
+    <textarea id="tutorial_answer_text3" name="tutorial_answer_text3" required></textarea>
+  </div>
+
+  <!-- Footer -->
+  <h2>כותרת תחתונה (Footer)</h2>
+  <div class="form-group">
+    <label for="footer_rights">זכויות יוצרים (`footer_rights`):</label>
+    <input type="text" id="footer_rights" name="footer_rights" required>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit">שמור תרגומים</button>
+</form>
+<script src="js/backoffice.js"></script>
+</body>
+</html>

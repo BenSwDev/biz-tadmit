@@ -1,0 +1,1113 @@
+Start of file: index.html
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta tags (translations handled in script.js if needed) -->
+  <title data-translate="title">טושטוש משלוחים - שירות משלוחים מקצועי בכל הארץ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Flag Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@6.7.0/css/flag-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="#" class="logo">
+      <img src="logo.png" alt="Logo" />
+    </a>
+    <div class="header-right">
+      <!-- Language Switcher Dropdown -->
+      <div class="language-switcher">
+        <button class="dropdown-toggle">
+          <span class="fi fi-il"></span> <!-- Default flag -->
+        </button>
+        <ul class="dropdown-menu">
+          <li data-lang="he"><span class="fi fi-il"></span> עברית</li>
+          <li data-lang="en"><span class="fi fi-gb"></span> English</li>
+          <li data-lang="es"><span class="fi fi-es"></span> Español</li>
+          <li data-lang="it"><span class="fi fi-it"></span> Italiano</li>
+          <li data-lang="ar"><span class="fi fi-ae"></span> العربية</li>
+          <li data-lang="de"><span class="fi fi-de"></span> Deutsch</li>
+          <li data-lang="pt"><span class="fi fi-pt"></span> Português</li>
+        </ul>
+      </div>
+      <!-- Hamburger Button -->
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+    <!-- Navigation Menu -->
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="#biz-online" data-translate="nav_biz_online">מה זה ביז אונליין?</a></li>
+        <li><a href="#tutorial-videos" data-translate="nav_tutorial_videos">סרטוני הדרכה</a></li>
+        <li><a href="#reviews" data-translate="nav_reviews">חוות דעת</a></li>
+        <li><a href="#faq" data-translate="nav_faq">שאלות ותשובות</a></li>
+        <li><a href="#contact" data-translate="nav_contact">צור קשר</a></li>
+        <!-- Call to Action Buttons -->
+        <li class="cta-button-container">
+          <a href="https://wa.me/yourwhatsappnumber" class="cta-whatsapp-button">
+            <i class="fab fa-whatsapp"></i> <span data-translate="cta_whatsapp">לחצו לתמיכה והדרכה בWhatsApp</span>
+          </a>
+        </li>
+        <li class="cta-button-container">
+          <a href="/login" class="cta-login-button">
+            <i class="fas fa-sign-in-alt"></i> <span data-translate="cta_login">התחברות</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Drawer Menu -->
+  <nav class="drawer-nav" aria-hidden="true">
+    <ul>
+      <li><a href="#biz-online" data-translate="nav_biz_online">מה זה ביז אונליין?</a></li>
+      <li><a href="#tutorial-videos" data-translate="nav_tutorial_videos">סרטוני הדרכה</a></li>
+      <li><a href="#reviews" data-translate="nav_reviews">חוות דעת</a></li>
+      <li><a href="#faq" data-translate="nav_faq">שאלות ותשובות</a></li>
+      <li><a href="#contact" data-translate="nav_contact">צור קשר</a></li>
+      <!-- Call to Action Buttons -->
+      <li class="cta-button-container">
+        <a href="https://wa.me/yourwhatsappnumber" class="cta-whatsapp-button">
+          <i class="fab fa-whatsapp"></i> <span data-translate="cta_whatsapp">לחצו לתמיכה והדרכה בWhatsApp</span>
+        </a>
+      </li>
+      <li class="cta-button-container">
+        <a href="/login" class="cta-login-button">
+          <i class="fas fa-sign-in-alt"></i> <span data-translate="cta_login">התחברות</span>
+        </a>
+      </li>
+    </ul>
+    <section class="delivery-motor">
+      <i class="fas fa-spa"></i>
+    </section>
+  </nav>
+  <!-- Overlay for Drawer -->
+  <div class="drawer-overlay" tabindex="-1" aria-hidden="true"></div>
+</header>
+
+<section id="hero" class="hero-section">
+  <div class="hero-content">
+    <h2 data-translate="hero_heading">תכירו את ביז אונליין!</h2>
+    <p data-translate="hero_text1">טקסט מותאם טקסט מותאם טקסט מותאם</p>
+    <p data-translate="hero_text2">טקסט מותאם טקסט מותאם טקסט מותאם</p>
+    <p data-translate="hero_text3">טקסט מותאם טקסט מותאם טקסט מותאם</p>
+    <a href="#contact" class="cta-button">
+      <i class="fas fa-phone"></i> <span data-translate="cta_schedule_call">תאמו שיחת הדרכה ללא עלות!</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p data-translate="footer_rights">כל הזכויות שמורות © 2024 טושטוש משלוחים</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+End of file: index.html
+Start of file: script.js
+// Translations included within the script
+const translations = {
+    'he': {
+        'title': 'טושטוש משלוחים - שירות משלוחים מקצועי בכל הארץ',
+        'nav_biz_online': 'מה זה ביז אונליין?',
+        'nav_tutorial_videos': 'סרטוני הדרכה',
+        'nav_reviews': 'חוות דעת',
+        'nav_faq': 'שאלות ותשובות',
+        'nav_contact': 'צור קשר',
+        'cta_whatsapp': 'לחצו לתמיכה והדרכה בWhatsApp',
+        'cta_login': 'התחברות',
+        'hero_heading': 'תכירו את ביז אונליין!',
+        'hero_text1': 'טקסט מותאם טקסט מותאם טקסט מותאם',
+        'hero_text2': 'טקסט מותאם טקסט מותאם טקסט מותאם',
+        'hero_text3': 'טקסט מותאם טקסט מותאם טקסט מותאם',
+        'cta_schedule_call': 'תאמו שיחת הדרכה ללא עלות!',
+        'footer_rights': 'כל הזכויות שמורות © 2024 טושטוש משלוחים'
+    },
+    'en': {
+        'title': 'TushTush Deliveries - Professional Delivery Service Nationwide',
+        'nav_biz_online': 'What is Biz Online?',
+        'nav_tutorial_videos': 'Tutorial Videos',
+        'nav_reviews': 'Reviews',
+        'nav_faq': 'FAQ',
+        'nav_contact': 'Contact Us',
+        'cta_whatsapp': 'Click for Support and Guidance on WhatsApp',
+        'cta_login': 'Login',
+        'hero_heading': 'Meet Biz Online!',
+        'hero_text1': 'Customized text customized text customized text',
+        'hero_text2': 'Customized text customized text customized text',
+        'hero_text3': 'Customized text customized text customized text',
+        'cta_schedule_call': 'Schedule a Free Tutorial Call!',
+        'footer_rights': 'All rights reserved © 2024 TushTush Deliveries'
+    },
+    'es': {
+        'title': 'TushTush Entregas - Servicio de Entrega Profesional en Todo el País',
+        'nav_biz_online': '¿Qué es Biz Online?',
+        'nav_tutorial_videos': 'Videos Tutoriales',
+        'nav_reviews': 'Reseñas',
+        'nav_faq': 'Preguntas Frecuentes',
+        'nav_contact': 'Contáctanos',
+        'cta_whatsapp': 'Haz clic para Soporte y Guía en WhatsApp',
+        'cta_login': 'Iniciar Sesión',
+        'hero_heading': '¡Conoce Biz Online!',
+        'hero_text1': 'Texto personalizado texto personalizado texto personalizado',
+        'hero_text2': 'Texto personalizado texto personalizado texto personalizado',
+        'hero_text3': 'Texto personalizado texto personalizado texto personalizado',
+        'cta_schedule_call': '¡Programa una Llamada de Tutorial Gratis!',
+        'footer_rights': 'Todos los derechos reservados © 2024 TushTush Entregas'
+    },
+    'de': {
+        'title': 'TushTush Lieferungen - Professioneller Lieferservice Bundesweit',
+        'nav_biz_online': 'Was ist Biz Online?',
+        'nav_tutorial_videos': 'Tutorial-Videos',
+        'nav_reviews': 'Bewertungen',
+        'nav_faq': 'FAQ',
+        'nav_contact': 'Kontaktieren Sie Uns',
+        'cta_whatsapp': 'Klicken Sie für Support und Anleitung auf WhatsApp',
+        'cta_login': 'Anmelden',
+        'hero_heading': 'Lernen Sie Biz Online kennen!',
+        'hero_text1': 'Angepasster Text angepasster Text angepasster Text',
+        'hero_text2': 'Angepasster Text angepasster Text angepasster Text',
+        'hero_text3': 'Angepasster Text angepasster Text angepasster Text',
+        'cta_schedule_call': 'Vereinbaren Sie einen kostenlosen Tutorial-Anruf!',
+        'footer_rights': 'Alle Rechte vorbehalten © 2024 TushTush Lieferungen'
+    },
+    'it': {
+        'title': 'TushTush Consegne - Servizio di Consegna Professionale in Tutta Italia',
+        'nav_biz_online': 'Cos\'è Biz Online?',
+        'nav_tutorial_videos': 'Video Tutorial',
+        'nav_reviews': 'Recensioni',
+        'nav_faq': 'FAQ',
+        'nav_contact': 'Contattaci',
+        'cta_whatsapp': 'Clicca per Supporto e Guida su WhatsApp',
+        'cta_login': 'Accedi',
+        'hero_heading': 'Scopri Biz Online!',
+        'hero_text1': 'Testo personalizzato testo personalizzato testo personalizzato',
+        'hero_text2': 'Testo personalizzato testo personalizzato testo personalizzato',
+        'hero_text3': 'Testo personalizzato testo personalizzato testo personalizzato',
+        'cta_schedule_call': 'Programma una Chiamata Tutorial Gratuita!',
+        'footer_rights': 'Tutti i diritti riservati © 2024 TushTush Consegne'
+    },
+    'pt': {
+        'title': 'TushTush Entregas - Serviço de Entrega Profissional em Todo o País',
+        'nav_biz_online': 'O que é Biz Online?',
+        'nav_tutorial_videos': 'Vídeos Tutoriais',
+        'nav_reviews': 'Avaliações',
+        'nav_faq': 'Perguntas Frequentes',
+        'nav_contact': 'Contate-Nos',
+        'cta_whatsapp': 'Clique para Suporte e Orientação no WhatsApp',
+        'cta_login': 'Entrar',
+        'hero_heading': 'Conheça o Biz Online!',
+        'hero_text1': 'Texto personalizado texto personalizado texto personalizado',
+        'hero_text2': 'Texto personalizado texto personalizado texto personalizado',
+        'hero_text3': 'Texto personalizado texto personalizado texto personalizado',
+        'cta_schedule_call': 'Agende uma Chamada de Tutorial Grátis!',
+        'footer_rights': 'Todos os direitos reservados © 2024 TushTush Entregas'
+    },
+    'ar': {
+        'title': 'توش توش للتوصيل - خدمة توصيل احترافية في جميع أنحاء البلاد',
+        'nav_biz_online': 'ما هو بيز أونلاين؟',
+        'nav_tutorial_videos': 'فيديوهات تعليمية',
+        'nav_reviews': 'مراجعات',
+        'nav_faq': 'الأسئلة الشائعة',
+        'nav_contact': 'اتصل بنا',
+        'cta_whatsapp': 'انقر للدعم والإرشاد على واتساب',
+        'cta_login': 'تسجيل الدخول',
+        'hero_heading': 'تعرف على بيز أونلاين!',
+        'hero_text1': 'نص مخصص نص مخصص نص مخصص',
+        'hero_text2': 'نص مخصص نص مخصص نص مخصص',
+        'hero_text3': 'نص مخصص نص مخصص نص مخصص',
+        'cta_schedule_call': 'جدولة مكالمة تعليمية مجانية!',
+        'footer_rights': 'جميع الحقوق محفوظة © 2024 توش توش للتوصيل'
+    }
+};
+
+// Toggle FAQ answers
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+        item.classList.toggle('active');
+    });
+
+    // Allow toggling via keyboard
+    question.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            item.classList.toggle('active');
+        }
+    });
+});
+
+// Hamburger and Drawer Functionality
+const hamburger = document.querySelector('.hamburger');
+const drawerNav = document.querySelector('.drawer-nav');
+const drawerOverlay = document.querySelector('.drawer-overlay');
+const drawerLinks = document.querySelectorAll('.drawer-nav ul li a');
+
+const toggleDrawer = () => {
+    const isActive = drawerNav.classList.toggle('active');
+    drawerOverlay.classList.toggle('active');
+    hamburger.classList.toggle('active'); // Toggle 'active' class on hamburger
+    hamburger.setAttribute('aria-expanded', isActive);
+    drawerNav.setAttribute('aria-hidden', !isActive);
+};
+
+// Event listener for hamburger click
+hamburger.addEventListener('click', toggleDrawer);
+
+// Event listener for overlay click to close drawer
+drawerOverlay.addEventListener('click', toggleDrawer);
+
+// Close drawer when a link is clicked
+drawerLinks.forEach(link => {
+    link.addEventListener('click', toggleDrawer);
+});
+
+// Smooth Scrolling with Offset
+const offset = 80; // Adjust this value according to header height
+
+const smoothScroll = (event) => {
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth',
+        });
+    }
+};
+
+// Apply smooth scrolling to all nav links
+const allNavLinks = document.querySelectorAll(
+    'nav ul li a, .drawer-nav ul li a, .cta-button'
+);
+
+allNavLinks.forEach((link) => {
+    link.addEventListener('click', smoothScroll);
+});
+
+// Language Switching Functionality
+const languageSwitcher = document.querySelector('.language-switcher');
+const languageToggle = document.querySelector('.language-switcher .dropdown-toggle');
+const languageMenu = document.querySelector('.language-switcher .dropdown-menu');
+const languageOptions = document.querySelectorAll('.language-switcher .dropdown-menu li');
+
+languageToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    languageMenu.classList.toggle('show');
+});
+
+languageOptions.forEach((option) => {
+    option.addEventListener('click', () => {
+        const selectedLang = option.getAttribute('data-lang');
+        // Update the language
+        setLanguage(selectedLang);
+        // Close the dropdown
+        languageMenu.classList.remove('show');
+    });
+});
+
+// Close the language menu when clicking outside
+document.addEventListener('click', (event) => {
+    if (!languageSwitcher.contains(event.target)) {
+        languageMenu.classList.remove('show');
+    }
+});
+
+function setLanguage(lang) {
+    // Get the translations for the selected language
+    const selectedTranslations = translations[lang];
+    if (selectedTranslations) {
+        // Update all elements with data-translate attribute
+        document.querySelectorAll('[data-translate]').forEach((element) => {
+            const key = element.getAttribute('data-translate');
+            if (selectedTranslations[key]) {
+                if (
+                    element.tagName.toLowerCase() === 'input' ||
+                    element.tagName.toLowerCase() === 'textarea'
+                ) {
+                    element.placeholder = selectedTranslations[key];
+                } else if (element.tagName.toLowerCase() === 'title') {
+                    document.title = selectedTranslations[key];
+                } else {
+                    element.textContent = selectedTranslations[key];
+                }
+            }
+        });
+
+        // Update the lang and dir attributes on the html tag
+        const htmlTag = document.documentElement;
+        htmlTag.lang = lang;
+        if (lang === 'ar' || lang === 'he') {
+            htmlTag.dir = 'rtl';
+        } else {
+            htmlTag.dir = 'ltr';
+        }
+
+        // Update the flag icon in the language toggle button
+        const selectedOption = document.querySelector(
+            `.language-switcher .dropdown-menu li[data-lang="${lang}"]`
+        );
+        if (selectedOption) {
+            const flagClass = selectedOption.querySelector('.fi').className;
+            languageToggle.querySelector('.fi').className = flagClass;
+        }
+
+        // Store the selected language in localStorage
+        localStorage.setItem('selectedLang', lang);
+    } else {
+        console.error('Translations not found for language:', lang);
+    }
+}
+
+// On page load, check if a language is stored in localStorage
+document.addEventListener('DOMContentLoaded', () => {
+    const storedLang = localStorage.getItem('selectedLang') || 'he';
+    setLanguage(storedLang);
+});
+
+End of file: script.js
+Start of file: footer.css
+/* עיצוב פוטר */
+footer {
+    background-color: #ffffff; /* Changed to white */
+    color: #333333; /* Changed to black-grey */
+    text-align: center;
+    padding: 20px 10px; /* Increased padding for better spacing */
+    width: 100%;
+    z-index: 1000;
+    border-top: 1px solid #e0e0e0; /* Added border for separation */
+}
+
+footer p {
+    margin-top: 0;
+    font-size: 1em; /* Adjusted font size */
+    color: #333333; /* Ensured text color is black-grey */
+}
+End of file: footer.css
+Start of file: header.css
+/* General styling for the header */
+header {
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Align it to the top */
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 2000; /* Increased z-index to ensure it stays on top */
+    background-color: #ffffff; /* Changed to white */
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: padding 0.3s ease, background-color 0.3s ease;
+}
+
+/* Adjusting header items for alignment */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    z-index: 2000; /* Ensure logo is on top */
+}
+
+header .logo img {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+header .logo img:hover {
+    transform: scale(1.05);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    z-index: 2000; /* Ensure elements are on top */
+}
+
+/* Language Switcher Styling */
+.language-switcher {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-inline-end: 15px;
+}
+
+.language-switcher .dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 1em;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.language-switcher .dropdown-toggle .fi {
+    font-size: 1.5em;
+}
+
+.language-switcher .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin-top: 5px;
+    display: none;
+    min-width: 150px;
+    z-index: 3000;
+}
+
+.language-switcher .dropdown-menu.show {
+    display: block;
+}
+
+.language-switcher .dropdown-menu li {
+    list-style: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.language-switcher .dropdown-menu li:hover {
+    background: #f0f0f0;
+}
+
+.language-switcher .dropdown-menu li .fi {
+    margin-inline-end: 10px;
+    font-size: 1.2em;
+}
+
+/* Hamburger Styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 2000; /* Ensure hamburger is on top */
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #0DABB6; /* Changed to #0DABB6 */
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+    display: flex;
+    align-items: center;
+}
+
+.desktop-nav ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center navigation items */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.desktop-nav ul li {
+    list-style: none;
+}
+
+.desktop-nav ul li a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    transition: none; /* Removed animations */
+    white-space: nowrap; /* Ensure menu items stay on one line */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    color: #333; /* Set nav links to non-blue color */
+}
+
+.desktop-nav ul li a:hover,
+.desktop-nav ul li a:focus {
+    background-color: #ffb703;
+    color: #333;
+    outline: none;
+}
+
+/* Ensuring WhatsApp button remains green on hover */
+.desktop-nav ul li a.cta-whatsapp-button:hover,
+.drawer-nav ul li a.cta-whatsapp-button:hover {
+    background-color: #1da851;
+}
+
+/* Call to action button styling within nav */
+.cta-button-container {
+    list-style: none;
+}
+
+.cta-button,
+.cta-whatsapp-button,
+.cta-login-button {
+    margin-top: -10px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #0DABB6; /* Base color */
+    color: #ffffff;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    white-space: nowrap; /* Ensure the button stays on one line */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cta-button i,
+.cta-whatsapp-button i,
+.cta-login-button i {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+/* Icon alignment for RTL and LTR */
+html[dir="rtl"] .cta-button i,
+html[dir="rtl"] .cta-whatsapp-button i,
+html[dir="rtl"] .cta-login-button i {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+html[dir="ltr"] .cta-button i,
+html[dir="ltr"] .cta-whatsapp-button i,
+html[dir="ltr"] .cta-login-button i {
+    margin-right: 8px;
+    margin-left: 0;
+}
+
+/* Specific styles for each CTA button */
+.cta-whatsapp-button {
+    background-color: #25d366; /* WhatsApp Green */
+}
+
+.cta-whatsapp-button:hover,
+.cta-whatsapp-button:focus {
+    background-color: #1da851; /* Darker WhatsApp Green */
+}
+
+.cta-login-button {
+    background-color: #ffb703; /* Login Button Color */
+}
+
+.cta-login-button:hover,
+.cta-login-button:focus {
+    background-color: #e0a300; /* Darker shade on hover */
+}
+
+/* Drawer Navigation Styling */
+.drawer-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100%;
+    background-color: #ffffff; /* Changed to white */
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease;
+    z-index: 1050;
+    padding-top: 60px; /* Space for header */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.drawer-nav ul {
+    color: inherit;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.drawer-nav ul li {
+    color: inherit;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.drawer-nav ul li a {
+    color: #333; /* Changed to match nav links */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.drawer-nav ul li a:hover,
+.drawer-nav ul li a:focus {
+    background-color: #ffb703;
+    color: #333;
+}
+
+.drawer-nav ul li a i {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+/* Icon alignment for RTL and LTR in Drawer */
+html[dir="rtl"] .drawer-nav ul li a i {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+html[dir="ltr"] .drawer-nav ul li a i {
+    margin-right: 8px;
+    margin-left: 0;
+}
+
+.drawer-nav ul li.cta-button-container {
+    margin-top: auto;
+    padding-bottom: 30px;
+}
+
+.drawer-nav ul li.cta-button-container a.cta-button,
+.drawer-nav ul li.cta-button-container a.cta-whatsapp-button,
+.drawer-nav ul li.cta-button-container a.cta-login-button {
+    width: auto;
+    max-width: 200px;
+    text-align: center;
+    margin: 10px auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0DABB6; /* Base color */
+    color: #ffffff;
+    font-size: 1em;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.drawer-nav ul li.cta-button-container a.cta-whatsapp-button {
+    background-color: #25d366; /* WhatsApp Green */
+}
+
+.drawer-nav ul li.cta-button-container a.cta-whatsapp-button:hover,
+.drawer-nav ul li.cta-button-container a.cta-whatsapp-button:focus {
+    background-color: #1da851; /* Darker WhatsApp Green */
+}
+
+.drawer-nav ul li.cta-button-container a.cta-login-button {
+    background-color: #ffb703; /* Login Button Color */
+}
+
+.drawer-nav ul li.cta-button-container a.cta-login-button:hover,
+.drawer-nav ul li.cta-button-container a.cta-login-button:focus {
+    background-color: #e0a300; /* Darker shade on hover */
+}
+
+/* Drawer Overlay Styling */
+.drawer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+/* Active State for Drawer */
+.drawer-nav.active {
+    right: 0;
+}
+
+.drawer-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hamburger Animation when active */
+.hamburger.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Hide Desktop Navigation on Mobile and Tablet */
+@media (max-width: 1024px) {
+    .desktop-nav {
+        display: none !important;
+    }
+
+    /* Show Hamburger Button */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Adjust header container */
+    header .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Adjust the order and alignment based on direction */
+    html[dir="ltr"] header .container {
+        flex-direction: row;
+    }
+
+    html[dir="ltr"] .logo {
+        order: 1;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    html[dir="ltr"] .header-right {
+        order: 2;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    html[dir="rtl"] header .container {
+        flex-direction: row;
+    }
+
+    html[dir="rtl"] .logo {
+        order: 1;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    html[dir="rtl"] .header-right {
+        order: 2;
+        margin-right: auto;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust Container Padding */
+    header .container {
+        padding: 0 15px;
+    }
+
+    /* Adjust Drawer Navigation */
+    .drawer-nav {
+        width: 100%;
+        max-width: none;
+    }
+
+    .drawer-nav ul li a {
+        font-size: 1.2em;
+        padding: 12px 20px;
+        max-width: 90%; /* Further limit width on smaller screens */
+    }
+
+    .drawer-nav ul li.cta-button-container a.cta-button,
+    .drawer-nav ul li.cta-button-container a.cta-whatsapp-button,
+    .drawer-nav ul li.cta-button-container a.cta-login-button {
+        width: auto; /* Ensure buttons are appropriately sized */
+        max-width: 220px; /* Adjust max-width for better fit */
+        padding: 12px 20px;
+    }
+
+    /* Adjust Overlay */
+    .drawer-overlay.active {
+        background-color: rgba(0,0,0,0.6);
+    }
+}
+
+/* Delivery Motor (Spa Icon) Styling */
+.delivery-motor {
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    width: -webkit-fill-available;
+}
+
+.delivery-motor i {
+    color: #ffb703;
+    font-size: 15em;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    animation: rideMotorcycle 6s linear infinite;
+}
+
+/* Keyframes for riding effect */
+@keyframes rideMotorcycle {
+    0% {
+        left: -100px;
+        transform: rotate(0deg);
+    }
+    25% {
+        left: 25%;
+        transform: rotate(10deg);
+    }
+    50% {
+        left: 50%;
+        transform: rotate(-10deg);
+    }
+    75% {
+        left: 75%;
+        transform: rotate(10deg);
+    }
+    100% {
+        left: 100%;
+        transform: rotate(0deg);
+    }
+}
+
+/* Adjust z-index for header elements */
+header,
+header .logo,
+.header-right,
+.language-switcher,
+.hamburger {
+    z-index: 2000;
+}
+
+End of file: header.css
+Start of file: hero.css
+.hero-section {
+    margin-top: 80px;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(13, 171, 182, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-content:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    max-width: 900px;
+    color: #f0f0f0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0DABB6;
+    color: #ffffff;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cta-button i {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+    margin-inline-end: 8px;
+}
+
+.cta-button:hover i {
+    transform: translateX(5px);
+}
+
+html[dir="rtl"] .cta-button i {
+    margin-inline-end: 0;
+    margin-inline-start: 8px;
+}
+
+html[dir="rtl"] .cta-button:hover i {
+    transform: translateX(-5px);
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: #0B8C99;
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+/* Directional Styling */
+.hero-content h2,
+.hero-content p {
+    text-align: center;
+}
+
+html[dir="ltr"] .hero-content h2,
+html[dir="ltr"] .hero-content p {
+    text-align: left;
+}
+
+html[dir="rtl"] .hero-content h2,
+html[dir="rtl"] .hero-content p {
+    text-align: right;
+}
+
+End of file: hero.css
+Start of file: index.css
+/* Basic Styling */
+html, body {
+    font-family: 'Heebo', sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-size: 15px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+section {
+    padding: 10px 50px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 10px 15px; /* Reduce side padding for sections */
+    }
+}
+
+/* Icon alignment for RTL and LTR in general buttons */
+.cta-button i,
+.cta-whatsapp-button i,
+.cta-login-button i {
+    margin-inline-end: 8px;
+    transition: transform 0.3s ease;
+}
+
+html[dir="rtl"] .cta-button i,
+html[dir="rtl"] .cta-whatsapp-button i,
+html[dir="rtl"] .cta-login-button i {
+    margin-inline-end: 0;
+    margin-inline-start: 8px;
+}
+
+.cta-button:hover i,
+.cta-whatsapp-button:hover i,
+.cta-login-button:hover i {
+    transform: translateX(5px);
+}
+
+html[dir="rtl"] .cta-button:hover i,
+html[dir="rtl"] .cta-whatsapp-button:hover i,
+html[dir="rtl"] .cta-login-button:hover i {
+    transform: translateX(-5px);
+}
+
+/* Directional Styling for Text */
+html[dir="ltr"] p,
+html[dir="ltr"] h1,
+html[dir="ltr"] h2,
+html[dir="ltr"] h3,
+html[dir="ltr"] h4,
+html[dir="ltr"] h5,
+html[dir="ltr"] h6 {
+    text-align: left;
+}
+
+html[dir="rtl"] p,
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6 {
+    text-align: right;
+}
+
+End of file: index.css

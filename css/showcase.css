@@ -1,0 +1,108 @@
+/* showcase.css */
+
+.showcase-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.showcase-section h2 {
+    font-size: 2.5em;
+    color: #0DABB6;
+    margin-bottom: 50px;
+}
+
+.devices-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: nowrap; /* Prevent wrapping to keep devices side by side */
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 350px;
+}
+
+.device {
+    position: relative;
+    flex: 1 1 auto;
+    max-width: 50%;
+}
+
+.monitor-svg {
+    width: 100%;
+    height: 500px;
+}
+
+.phone-svg {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Limit the height */
+}
+
+.device .device-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; /* Adjust the aspect ratio */
+}
+
+.monitor-svg {
+    top: 0;
+    left: 0;
+}
+
+.phone-svg {
+    margin-bottom: 40px;
+}
+
+/* Adjustments for tablet view (up to 992px) */
+@media (max-width: 992px) {
+    .devices-container {
+        flex-wrap: nowrap; /* Keep devices side by side */
+        gap: 30px; /* Reduce gap for smaller screens */
+    }
+
+    .device {
+        max-width: 50%;
+        margin-bottom: 0;
+    }
+
+    .monitor-svg {
+        height: 400px;
+    }
+
+    .phone-svg {
+        max-height: 350px;
+    }
+}
+
+/* Adjustments for mobile view (up to 600px) */
+@media (max-width: 600px) {
+    .devices-container {
+        flex-wrap: nowrap; /* Keep devices side by side */
+        gap: 10px; /* Further reduce gap */
+    }
+
+    .showcase-section {
+        padding: 50px 10px;
+    }
+
+    .showcase-section h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .device {
+        max-width: 50%;
+    }
+
+    .monitor-svg {
+        height: 250px;
+    }
+
+    .phone-svg {
+        max-height: 250px;
+    }
+}

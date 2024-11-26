@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta tags (translations handled in script.js if needed) -->
+  <title data-translate="title">ביז אונליין - יומן הזמנות דיגיטלי לעסקים</title>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Flag Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@6.7.0/css/flag-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/showcase.css">
+  <link rel="stylesheet" href="css/reviews.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/faq.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="#" class="logo">
+      <img src="assets/logo.png" alt="Logo" />
+    </a>
+    <div class="header-right">
+      <!-- Language Switcher Dropdown -->
+      <div class="language-switcher">
+        <button class="dropdown-toggle">
+          <span class="fi fi-il"></span> <!-- Default flag -->
+        </button>
+        <ul class="dropdown-menu">
+          <li data-lang="he"><span class="fi fi-il"></span> עברית</li>
+          <li data-lang="en"><span class="fi fi-gb"></span> English</li>
+          <li data-lang="es"><span class="fi fi-es"></span> Español</li>
+          <li data-lang="it"><span class="fi fi-it"></span> Italiano</li>
+          <li data-lang="ar"><span class="fi fi-ae"></span> العربية</li>
+          <li data-lang="de"><span class="fi fi-de"></span> Deutsch</li>
+          <li data-lang="pt"><span class="fi fi-pt"></span> Português</li>
+        </ul>
+      </div>
+      <!-- Hamburger Button -->
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+    <!-- Navigation Menu -->
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="#hero" data-translate="nav_biz_online">מה זה ביז אונליין?</a></li>
+        <li><a href="#about" data-translate="nav_solutions">הפתרונות שלנו</a></li>
+        <li><a href="#tutorials" data-translate="nav_tutorial_videos">סרטוני הדרכה</a></li>
+        <li><a href="#tutorials" data-translate="nav_faq">שאלות ותשובות</a></li>
+        <li><a href="#reviews" data-translate="nav_reviews">חוות דעת</a></li>
+        <li><a href="#contact" data-translate="nav_contact">צור קשר</a></li>
+        <!-- Call to Action Buttons -->
+        <li class="cta-button-container">
+          <a href="https://wa.me/yourwhatsappnumber" class="cta-whatsapp-button">
+            <i class="fab fa-whatsapp"></i> <span data-translate="cta_whatsapp">לחצו לתמיכה והדרכה בWhatsApp</span>
+          </a>
+        </li>
+        <li class="cta-button-container">
+          <a href="/login" class="cta-login-button">
+            <i class="fas fa-sign-in-alt"></i> <span data-translate="cta_login">התחברות</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Drawer Menu -->
+  <nav class="drawer-nav" aria-hidden="true">
+    <ul>
+      <li><a href="#hero" data-translate="nav_biz_online">מה זה ביז אונליין?</a></li>
+      <li><a href="#about" data-translate="nav_solutions">הפתרונות שלנו</a></li>
+      <li><a href="#tutorials" data-translate="nav_tutorial_videos">סרטוני הדרכה</a></li>
+      <li><a href="#tutorials" data-translate="nav_faq">שאלות ותשובות</a></li>
+      <li><a href="#reviews" data-translate="nav_reviews">חוות דעת</a></li>
+      <li><a href="#contact" data-translate="nav_contact">צור קשר</a></li>
+      <!-- Call to Action Buttons -->
+      <li class="cta-button-container">
+        <a href="https://wa.me/yourwhatsappnumber" class="cta-whatsapp-button">
+          <i class="fab fa-whatsapp"></i> <span data-translate="cta_whatsapp">לחצו לתמיכה והדרכה בWhatsApp</span>
+        </a>
+      </li>
+      <li class="cta-button-container">
+        <a href="/login" class="cta-login-button">
+          <i class="fas fa-sign-in-alt"></i> <span data-translate="cta_login">התחברות</span>
+        </a>
+      </li>
+    </ul>
+    <section class="delivery-motor">
+      <i class="fas fa-spa"></i>
+    </section>
+  </nav>
+  <!-- Overlay for Drawer -->
+  <div class="drawer-overlay" tabindex="-1" aria-hidden="true"></div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="hero-section">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h2 data-translate="hero_heading">ביז אונליין - bizonline הינו יומן הזמנות דיגיטלי</h2>
+      <p data-translate="hero_text1">מערכת מתקדמת ליצירת הזמנות אונליין מכל מקום, התוכנה ידידותית ונוחה לשימוש.</p>
+      <p data-translate="hero_text2">לאור התפתחות ענף התיירות והאירועים נוצר רצון לתת מענה דווקא לבעלי עסקים אשר מבצעים מידי יום הזמנות המחפשים פתרון ומענה מהיר ונוח בתחום הנופש ותחום האירועים.</p>
+      <p data-translate="hero_text3">בביז אונליין ההזמנה מתבצעת בקליק ומכל מקום, ביומן הזמנות ביז אונליין קיימות אפשרויות טכנולוגיות רבות.</p>
+      <p data-translate="hero_text4">אז מי מאיתנו לא חלם על דרך פשוטה לניהול העסק? בשביל זה אנחנו כאן :-)</p>
+      <a href="#contact" class="cta-button">
+        <i class="fas fa-phone"></i> <span data-translate="cta_schedule_call">תאמו שיחת הדרכה ללא עלות!</span>
+      </a>
+    </div>
+    <div class="hero-video">
+      <div class="tv-container">
+        <!-- SVG TV Frame -->
+        <svg viewBox="0 0 200 150" class="tv-svg">
+          <!-- TV Frame -->
+          <rect x="0" y="0" width="200" height="150" rx="15" ry="15" fill="#000"></rect>
+          <!-- Screen -->
+          <rect x="10" y="10" width="180" height="130" fill="#fff"></rect>
+        </svg>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/M-V7hE1JxDs" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="about-background"></div>
+  <h2 data-translate="about_heading">נותנים לכם את כל הכלים להצלחה</h2>
+  <div class="benefits-container">
+    <div class="benefit-card">
+      <i class="fas fa-file-signature fa-2x benefit-icon" aria-hidden="true"></i>
+      <p data-translate="benefit1">חתימה דיגיטלית המתעדכנת מידית בעת חתימת הלקוח ומופיעה בתוכנה כחתומה.</p>
+    </div>
+    <div class="benefit-card">
+      <i class="fas fa-credit-card fa-2x benefit-icon" aria-hidden="true"></i>
+      <p data-translate="benefit2">סליקת אשראי דרך מסוף שהחברה תקים עבורכם ותוכל אף להנפיק חשבוניות.</p>
+    </div>
+    <div class="benefit-card">
+      <i class="fas fa-calendar-check fa-2x benefit-icon" aria-hidden="true"></i>
+      <p data-translate="benefit3">יומן תפוסה דיגיטלי לניהול הזמנות מכל מקום.</p>
+    </div>
+    <div class="benefit-card">
+      <i class="fas fa-chart-line fa-2x benefit-icon" aria-hidden="true"></i>
+      <p data-translate="benefit4">דוחות וסטטיסטיקות מתקדמות לניהול העסק.</p>
+    </div>
+    <div class="benefit-card">
+      <i class="fas fa-link fa-2x benefit-icon" aria-hidden="true"></i>
+      <p data-translate="benefit5">אפשרות להתממשקות מול בוקינג ואתרים נוספים.</p>
+    </div>
+  </div>
+</section>
+
+<!-- New Showcase Section -->
+<section id="showcase" class="showcase-section">
+  <div class="container">
+    <h2 data-translate="showcase_heading">הציצו למערכת שלנו</h2>
+    <div class="devices-container">
+      <div class="device monitor">
+        <!-- Monitor SVG Frame with embedded image -->
+        <svg viewBox="0 0 512 512" class="monitor-svg">
+          <!-- Monitor Frame -->
+          <rect x="16" y="16" width="480" height="320" rx="20" ry="20" fill="#333" />
+          <!-- Screen (Image) -->
+          <clipPath id="monitor-screen-clip">
+            <rect x="26" y="26" width="460" height="300" rx="15" ry="15" />
+          </clipPath>
+          <image href="assets/image1.png" x="26" y="26" width="460" height="300" clip-path="url(#monitor-screen-clip)" />
+          <!-- Monitor Stand -->
+          <rect x="216" y="356" width="80" height="20" fill="#333" />
+          <rect x="196" y="376" width="120" height="20" fill="#333" rx="10" ry="10" />
+        </svg>
+      </div>
+      <div class="device phone">
+        <!-- Phone SVG Frame with embedded image -->
+        <svg viewBox="0 0 200 400" class="phone-svg">
+          <!-- Phone Frame -->
+          <rect x="10" y="10" width="180" height="380" rx="30" ry="30" fill="#333" />
+          <!-- Screen (Image) -->
+          <clipPath id="phone-screen-clip">
+            <rect x="20" y="50" width="160" height="300" rx="15" ry="15" />
+          </clipPath>
+          <image href="assets/image1.png" x="20" y="50" width="160" height="300" clip-path="url(#phone-screen-clip)" />
+          <!-- Home Button -->
+          <circle cx="100" cy="370" r="10" fill="#555" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- New FAQ Section -->
+<section id="tutorials" class="faq">
+  <h2 data-translate="tutorials_heading">סרטוני הדרכה</h2>
+  <div class="faq-container">
+    <!-- FAQ Item 1 -->
+    <div class="faq-item">
+      <div class="faq-question" tabindex="0">
+        <i class="fas fa-question-circle"></i>
+        <h3 data-translate="tutorial_question1">כיצד להתחבר למערכת?</h3>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p data-translate="tutorial_answer_text1">
+          לניהול יומן התפוסה, ניתן לצפות ולהערוך את זמינות העסק דרך הלוח הראשי.
+        </p>
+        <!-- Video Embed with Screen -->
+        <div class="video-wrapper">
+          <div class="tv-container">
+            <!-- SVG TV Frame -->
+            <svg viewBox="0 0 200 150" class="tv-svg">
+              <!-- TV Frame -->
+              <rect x="0" y="0" width="200" height="150" rx="15" ry="15" fill="#000"></rect>
+              <!-- Screen -->
+              <rect x="10" y="10" width="180" height="130" fill="#fff"></rect>
+            </svg>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/M-V7hE1JxDs" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ Item 2 -->
+    <div class="faq-item">
+      <div class="faq-question" tabindex="0">
+        <i class="fas fa-question-circle"></i>
+        <h3 data-translate="tutorial_question2">איך ליצור הזמנה חדשה?</h3>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p data-translate="tutorial_answer_text2">
+          לניהול יומן התפוסה, ניתן לצפות ולהערוך את זמינות העסק דרך הלוח הראשי.
+        </p>
+        <!-- Video Embed with Screen -->
+        <div class="video-wrapper">
+          <div class="tv-container">
+            <!-- SVG TV Frame -->
+            <svg viewBox="0 0 200 150" class="tv-svg">
+              <!-- TV Frame -->
+              <rect x="0" y="0" width="200" height="150" rx="15" ry="15" fill="#000"></rect>
+              <!-- Screen -->
+              <rect x="10" y="10" width="180" height="130" fill="#fff"></rect>
+            </svg>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/M-V7hE1JxDs" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ Item 3 -->
+    <div class="faq-item">
+      <div class="faq-question" tabindex="0">
+        <i class="fas fa-question-circle"></i>
+        <h3 data-translate="tutorial_question3">ניהול יומן התפוסה</h3>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p data-translate="tutorial_answer_text3">
+          לניהול יומן התפוסה, ניתן לצפות ולהערוך את זמינות העסק דרך הלוח הראשי.
+        </p>
+        <!-- Video Embed with Screen -->
+        <div class="video-wrapper">
+          <div class="tv-container">
+            <!-- SVG TV Frame -->
+            <svg viewBox="0 0 200 150" class="tv-svg">
+              <!-- TV Frame -->
+              <rect x="0" y="0" width="200" height="150" rx="15" ry="15" fill="#000"></rect>
+              <!-- Screen -->
+              <rect x="10" y="10" width="180" height="130" fill="#fff"></rect>
+            </svg>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/M-V7hE1JxDs" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- New Reviews Section -->
+<section id="reviews" class="reviews">
+  <h2 data-translate="reviews_heading">חוות דעת של לקוחות</h2>
+  <div class="reviews-container">
+    <div class="review-card">
+      <div class="review-header">
+        <div class="reviewer-info">
+          <div class="review-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <p data-translate="review_text1">"התחלתי להשתמש בביז אונליין והעסק שלי השתפר משמעותית. המערכת ידידותית ונוחה."</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="reviewer-info">
+          <div class="review-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <p data-translate="review_text2">"בזכות ביז אונליין אני מנהלת את ההזמנות שלי בצורה יעילה ומהירה יותר. ממליצה בחום!"</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="reviewer-info">
+          <div class="review-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <p data-translate="review_text3">"המערכת מאפשרת לי לעקוב אחר ההזמנות בקלות ולשמור על קשר עם הלקוחות."</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="reviewer-info">
+          <div class="review-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <p data-translate="review_text4">"שירות לקוחות מצוין ומערכת שמתאימה בדיוק לצרכים של העסק שלי."</p>
+    </div>
+  </div>
+</section>
+
+<!-- New Contact Form Section -->
+<section id="contact" class="contact-form">
+  <h2 data-translate="contact_heading">צור קשר</h2>
+  <p data-translate="contact_subheading">נשמח לעמוד לשירותכם בכל שאלה או בקשה. צרו איתנו קשר עכשיו לקבלת פרטים נוספים והצעת מחיר מותאמת אישית עבורכם!</p>
+  <form id="contactForm">
+    <!-- Row 1: Name and Phone -->
+    <div class="row">
+      <div class="col">
+        <label for="name" data-translate="contact_label_name">שם מלא</label>
+        <input type="text" name="name" id="name" placeholder="הכנס את שמך המלא" data-translate="contact_placeholder_name" required>
+      </div>
+      <div class="col">
+        <label for="phone" data-translate="contact_label_phone">טלפון</label>
+        <input type="tel" name="phone" id="phone" placeholder="הכנס את מספר הטלפון שלך" data-translate="contact_placeholder_phone" required>
+      </div>
+    </div>
+
+    <!-- Row 2: Email -->
+    <div class="row">
+      <div class="col">
+        <label for="email" data-translate="contact_label_email">אימייל</label>
+        <input type="email" name="email" id="email" placeholder="הכנס את כתובת האימייל שלך" data-translate="contact_placeholder_email" required>
+      </div>
+    </div>
+
+    <!-- Row 3: Message -->
+    <div class="row">
+      <div class="col">
+        <label for="message" data-translate="contact_label_message">הודעה</label>
+        <textarea name="message" id="message" placeholder="הכנס את ההודעה שלך" data-translate="contact_placeholder_message" rows="5" required></textarea>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" data-translate="contact_submit_button">שלח הודעה</button>
+  </form>
+</section>
+
+
+<footer>
+  <p data-translate="footer_rights">כל הזכויות שמורות © 2024 ביז אונליין</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

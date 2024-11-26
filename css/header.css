@@ -1,0 +1,528 @@
+/* General styling for the header */
+header {
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Align it to the top */
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 2000; /* Increased z-index to ensure it stays on top */
+    background-color: #ffffff; /* Changed to white */
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: padding 0.3s ease, background-color 0.3s ease;
+}
+
+/* Adjusting header items for alignment */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    z-index: 2000; /* Ensure logo is on top */
+}
+
+header .logo img {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+header .logo img:hover {
+    transform: scale(1.05);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    z-index: 2000; /* Ensure elements are on top */
+}
+
+/* Language Switcher Styling */
+.language-switcher {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-inline-end: 15px;
+}
+
+.language-switcher .dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 1em;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.language-switcher .dropdown-toggle .fi {
+    font-size: 1.5em;
+}
+
+.language-switcher .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin-top: 5px;
+    display: none;
+    min-width: 150px;
+    z-index: 3000;
+}
+
+.language-switcher .dropdown-menu.show {
+    display: block;
+}
+
+.language-switcher .dropdown-menu li {
+    list-style: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.language-switcher .dropdown-menu li:hover {
+    background: #f0f0f0;
+}
+
+.language-switcher .dropdown-menu li .fi {
+    margin-inline-end: 10px;
+    font-size: 1.2em;
+}
+
+/* Hamburger Styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 2000; /* Ensure hamburger is on top */
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #0DABB6; /* Changed to #0DABB6 */
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+    display: flex;
+    align-items: center;
+}
+
+.desktop-nav ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center navigation items */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.desktop-nav ul li {
+    list-style: none;
+}
+
+.desktop-nav ul li a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    transition: none; /* Removed animations */
+    white-space: nowrap; /* Ensure menu items stay on one line */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    color: #333; /* Set nav links to non-blue color */
+}
+
+.desktop-nav ul li a:hover,
+.desktop-nav ul li a:focus {
+    background-color: #ffb703;
+    color: #333;
+    outline: none;
+}
+
+/* Ensuring WhatsApp button remains green on hover */
+.desktop-nav ul li a.cta-whatsapp-button:hover,
+.drawer-nav ul li a.cta-whatsapp-button:hover {
+    background-color: #1da851;
+}
+
+/* Call to action button styling within nav */
+.cta-button-container {
+    list-style: none;
+}
+
+.cta-button,
+.cta-whatsapp-button,
+.cta-login-button {
+    margin-top: -10px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #0DABB6; /* Base color */
+    color: #ffffff;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    white-space: nowrap; /* Ensure the button stays on one line */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cta-button i,
+.cta-whatsapp-button i,
+.cta-login-button i {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+/* Icon alignment for RTL and LTR */
+html[dir="rtl"] .cta-button i,
+html[dir="rtl"] .cta-whatsapp-button i,
+html[dir="rtl"] .cta-login-button i {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+html[dir="ltr"] .cta-button i,
+html[dir="ltr"] .cta-whatsapp-button i,
+html[dir="ltr"] .cta-login-button i {
+    margin-right: 8px;
+    margin-left: 0;
+}
+
+/* Specific styles for each CTA button */
+.cta-whatsapp-button {
+    background-color: #25d366; /* WhatsApp Green */
+}
+
+.cta-whatsapp-button:hover,
+.cta-whatsapp-button:focus {
+    background-color: #1da851; /* Darker WhatsApp Green */
+}
+
+.cta-login-button {
+    background-color: #ffb703; /* Login Button Color */
+}
+
+.cta-login-button:hover,
+.cta-login-button:focus {
+    background-color: #e0a300; /* Darker shade on hover */
+}
+
+/* Drawer Navigation Styling */
+.drawer-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100%;
+    background-color: #ffffff; /* Changed to white */
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease;
+    z-index: 1050;
+    padding-top: 60px; /* Space for header */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.drawer-nav ul {
+    color: inherit;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.drawer-nav ul li {
+    color: inherit;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.drawer-nav ul li a {
+    color: #333; /* Changed to match nav links */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.drawer-nav ul li a:hover,
+.drawer-nav ul li a:focus {
+    background-color: #ffb703;
+    color: #333;
+}
+
+.drawer-nav ul li a i {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+/* Icon alignment for RTL and LTR in Drawer */
+html[dir="rtl"] .drawer-nav ul li a i {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+html[dir="ltr"] .drawer-nav ul li a i {
+    margin-right: 8px;
+    margin-left: 0;
+}
+
+.drawer-nav ul li.cta-button-container {
+    margin-top: auto;
+    padding-bottom: 30px;
+}
+
+.drawer-nav ul li.cta-button-container a.cta-button,
+.drawer-nav ul li.cta-button-container a.cta-whatsapp-button,
+.drawer-nav ul li.cta-button-container a.cta-login-button {
+    width: auto;
+    max-width: 200px;
+    text-align: center;
+    margin: 10px auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0DABB6; /* Base color */
+    color: #ffffff;
+    font-size: 1em;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.drawer-nav ul li.cta-button-container a.cta-whatsapp-button {
+    background-color: #25d366; /* WhatsApp Green */
+}
+
+.drawer-nav ul li.cta-button-container a.cta-whatsapp-button:hover,
+.drawer-nav ul li.cta-button-container a.cta-whatsapp-button:focus {
+    background-color: #1da851; /* Darker WhatsApp Green */
+}
+
+.drawer-nav ul li.cta-button-container a.cta-login-button {
+    background-color: #ffb703; /* Login Button Color */
+}
+
+.drawer-nav ul li.cta-button-container a.cta-login-button:hover,
+.drawer-nav ul li.cta-button-container a.cta-login-button:focus {
+    background-color: #e0a300; /* Darker shade on hover */
+}
+
+/* Drawer Overlay Styling */
+.drawer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+/* Active State for Drawer */
+.drawer-nav.active {
+    right: 0;
+}
+
+.drawer-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hamburger Animation when active */
+.hamburger.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Hide Desktop Navigation on Mobile and Tablet */
+@media (max-width: 1024px) {
+    .desktop-nav {
+        display: none !important;
+    }
+
+    /* Show Hamburger Button */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Adjust header container */
+    header .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Adjust the order and alignment based on direction */
+    html[dir="ltr"] header .container {
+        flex-direction: row;
+    }
+
+    html[dir="ltr"] .logo {
+        order: 1;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    html[dir="ltr"] .header-right {
+        order: 2;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    html[dir="rtl"] header .container {
+        flex-direction: row;
+    }
+
+    html[dir="rtl"] .logo {
+        order: 1;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    html[dir="rtl"] .header-right {
+        order: 2;
+        margin-right: auto;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust Container Padding */
+    header .container {
+        padding: 0 15px;
+    }
+
+    /* Adjust Drawer Navigation */
+    .drawer-nav {
+        width: 100%;
+        max-width: none;
+    }
+
+    .drawer-nav ul li a {
+        font-size: 1.2em;
+        padding: 12px 20px;
+        max-width: 90%; /* Further limit width on smaller screens */
+    }
+
+    .drawer-nav ul li.cta-button-container a.cta-button,
+    .drawer-nav ul li.cta-button-container a.cta-whatsapp-button,
+    .drawer-nav ul li.cta-button-container a.cta-login-button {
+        width: auto; /* Ensure buttons are appropriately sized */
+        max-width: 220px; /* Adjust max-width for better fit */
+        padding: 12px 20px;
+    }
+
+    /* Adjust Overlay */
+    .drawer-overlay.active {
+        background-color: rgba(0,0,0,0.6);
+    }
+}
+
+/* Delivery Motor (Spa Icon) Styling */
+.delivery-motor {
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    width: -webkit-fill-available;
+}
+
+.delivery-motor i {
+    color: #ffb703;
+    font-size: 15em;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    animation: rideMotorcycle 6s linear infinite;
+}
+
+/* Keyframes for riding effect */
+@keyframes rideMotorcycle {
+    0% {
+        left: -100px;
+        transform: rotate(0deg);
+    }
+    25% {
+        left: 25%;
+        transform: rotate(10deg);
+    }
+    50% {
+        left: 50%;
+        transform: rotate(-10deg);
+    }
+    75% {
+        left: 75%;
+        transform: rotate(10deg);
+    }
+    100% {
+        left: 100%;
+        transform: rotate(0deg);
+    }
+}
+
+/* Adjust z-index for header elements */
+header,
+header .logo,
+.header-right,
+.language-switcher,
+.hamburger {
+    z-index: 2000;
+}

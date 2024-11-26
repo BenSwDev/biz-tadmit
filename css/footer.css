@@ -1,0 +1,16 @@
+/* עיצוב פוטר */
+footer {
+    background-color: #ffffff; /* Changed to white */
+    color: #333333; /* Changed to black-grey */
+    text-align: center;
+    padding: 20px 10px; /* Increased padding for better spacing */
+    width: 100%;
+    z-index: 1000;
+    border-top: 1px solid #e0e0e0; /* Added border for separation */
+}
+
+footer p {
+    margin-top: 0;
+    font-size: 1em; /* Adjusted font size */
+    color: #333333; /* Ensured text color is black-grey */
+}

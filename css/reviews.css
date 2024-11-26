@@ -1,0 +1,88 @@
+/* reviews.css */
+
+/* Reviews Section Styling */
+.reviews {
+    text-align: center;
+    padding: 50px 10px;
+    background-color: #f7f9fc; /* Match the site's color scheme */
+}
+
+.reviews h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #0DABB6;
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.review-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.review-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.review-avatar {
+    font-size: 3em;
+    color: #0DABB6;
+    margin-bottom: 10px;
+}
+
+.reviewer-info strong {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.review-rating {
+    margin-top: 5px;
+}
+
+.review-rating i {
+    color: #FFD700; /* Gold color for stars */
+    font-size: 1.2em;
+}
+
+.review-text {
+    font-size: 1.1em;
+    color: #555;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .reviews h2 {
+        font-size: 2em;
+    }
+
+    .review-card {
+        padding: 15px;
+    }
+
+    .review-avatar {
+        font-size: 2.5em;
+    }
+}
